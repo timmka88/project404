@@ -1,0 +1,144 @@
+/* jura-300 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/jura-v29-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* jura-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jura-v29-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* jura-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/jura-v29-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* jura-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/jura-v29-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* jura-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/jura-v29-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  html{
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+
+  body{
+    font-family: 'Jura';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #231F20;
+  }
+  
+
+
+  /*card style */
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+ .card_title{
+   max-width: 727px;
+   height: 155px;
+   font-size: 56px;
+   line-height: 108%;
+   letter-spacing: -0.5%;
+   margin-top: 103px;
+   margin-bottom: 50px;
+  
+ }
+
+ .png_main{
+   display: flex;
+   justify-content: right;
+   
+   margin-top: 103px;
+   height: 556px;
+   width: 546px;
+ }
+
+ .form-main{
+   text-align: right;
+   width: 430px;
+   height: 372.3px;
+   
+ }
+
+ .leg{
+  width: 380px;
+  height: 46px;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+ }
+
+ .form-main_data{
+   
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   
+   
+   
+ }
+
+ .form-main_field{
+  font-family: 'Jura';
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  width: 430px;
+  height: 61px;
+  background-color: #F1F5F9;
+  padding: 20px;
+  border: 0;
+  margin-bottom: 5px;
+ }
+
+ .form-main_data::placeholder{
+  font-family: 'Jura';
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+ }
