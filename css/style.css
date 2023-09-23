@@ -273,6 +273,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white;
 }
 
@@ -318,4 +320,8 @@ body {
   bottom: -5px;
   right: -5px;
   margin-bottom: 0px;
+}
+
+.courses-button{
+  margin-top: 60px;
 }
