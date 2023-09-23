@@ -251,11 +251,12 @@ body {
   font-weight: bold;
   letter-spacing: 5%;
   line-height: auto;
+  text-align: left;
 }
 
 .choice-text {
   width: 384px;
-  height: 147px;
+  max-height: 147px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -287,39 +288,34 @@ body {
   border-radius: 20px;
 }
 
-.png-courses {
-  display: flex;
-  flex-direction: row-reverse;
+.courses-text {
   width: 384px;
-  height: 200px;
-  margin: 20px;
-  border: none;
-  border-radius: 15px;
+  max-height: 147px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 130%;
+  line-height: auto;
+  text-align: left;
 }
 
-.png-icon {
-  border: none;
-  /*-webkit-border-radius: 15px;
-  -moz-border-radius: 15px;*/
-  border-radius: 15px;
-}
-
-.courses-type{
-  height: 20px;
-  max-width: 180px;
-  font-size: 12px;
+.number-of-lessons {
+  max-width: 120px;
+  height: 42px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 130%;
-  letter-spacing: 2px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: auto;
-  padding-bottom: auto;
-  text-align: center;
-  color: #4667ff;
-  border: 1px solid;
-  border-color: #4667ff;
-  border-radius: 8px;
-  margin-top: 5px;
-  margin-right: 5px;
+  letter-spacing: 5%;
+  line-height: auto;
+  text-align: left;
+}
+
+.courses-link{
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  margin-bottom: 0px;
 }
