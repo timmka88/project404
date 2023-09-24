@@ -13,9 +13,10 @@
 
     <body>
       <main>
+        <!--SECTION INTRO-->
         <section class="card">
           <div class="wrapper-without-png">
-            <h1 class="card_title">
+            <h1 class="card-title">
               Онлайн-курсы программирования и робототехники для детей
             </h1>
 
@@ -24,30 +25,31 @@
               action="<?php the_permalink();?>"
               class="form-main"
             >
-              <fieldset class="form-main_wrap">
+              <fieldset class="form-main-wrap">
                 <legend class="form-legend">
                   Запишитесь на бесплатный пробный урок и начните свое обучение
                 </legend>
-                <p class="form-main_data">
+                <p class="form-main-data">
                   <input
+                    id="name"
                     name="u_name"
                     type="text"
                     placeholder="Ваше имя"
                     required
-                    class="form-main_field"
+                    class="form-main-field"
                   />
                   <input
                     name="phone"
                     type="tel"
                     placeholder="Телефон"
                     required
-                    class="form-main_field"
+                    class="form-main-field"
                   />
 
                   <select
                     name="connect"
                     id="connect-select"
-                    class="form-main_field"
+                    class="form-main-field"
                   >
                     <option value="ring">Звонок</option>
                     <option value="whatsapp">WhattsApp</option>
@@ -69,14 +71,14 @@
               </fieldset>
             </form>
           </div>
-          <div class="png_main">
-            <img src="img/svg/Frame.png" alt="png_main" />
+          <div class="png-main">
+            <img src="img/svg/Frame.png" alt="png-main" />
           </div>
         </section>
 
         <!--SECTION CHOICE-->
         <section class="choice">
-          <h2 class="choice_title">НАС ВЫБИРАЮТ РОДИТЕЛИ, ПОТОМУ ЧТО …</h2>
+          <h2 class="choice-title">НАС ВЫБИРАЮТ РОДИТЕЛИ, ПОТОМУ ЧТО …</h2>
           <div class="choice-wrapper">
             <div class="choice-card">
               <div class="png-choice">
@@ -172,7 +174,7 @@
 
         <!--SECTION COURSES-->
         <section class="courses">
-          <h2 class="choice_title" style="color: #231f20; margin-top: 60px">
+          <h2 class="choice-title" style="color: #231f20; margin-top: 60px">
             КАТАЛОГ КУРСОВ
           </h2>
           <div class="choice-wrapper">
@@ -475,6 +477,196 @@
               });
             });
           </script>
+        </section>
+
+        <!--SECTION SUBSCRIPTION-->
+        <section class="subscription">
+          <h2 class="choice-title">АБОНЕМЕНТ</h2>
+          <div class="choice-wrapper">
+            <!--1st card-->
+            <div class="subscription-card">
+              <div class="subscription-content">
+                <p class="subscription-imprisonment">1 МЕСЯЦ</p>
+                <p class="subscription-info">4 ЗАНЯТИЯ</p>
+                <p class="subscription-info">1 ЗАНЯТИЕ В НЕДЕЛЮ</p>
+                <p class="subscription-price">4 400&ensp;</p>
+                <p class="subscription-text">
+                  /&nbsp;1&thinsp;100 рублей за занятие
+                </p>
+              </div>
+            </div>
+            <!--2nd card-->
+            <div class="subscription-card" style="position: relative">
+              <div class="subscription-content">
+                <p class="subscription-imprisonment">3 МЕСЯЦ</p>
+                <p class="subscription-info">12 ЗАНЯТИЙ</p>
+                <p class="subscription-info">1 ЗАНЯТИЕ В НЕДЕЛЮ</p>
+                <p class="subscription-price">12 540&ensp;</p>
+                <p class="subscription-text">
+                  /&nbsp;1&thinsp;045 рублей за занятие
+                </p>
+              </div>
+              <img
+                class="subscription-png"
+                src="/img/svg/subscription5.png"
+                alt="sub5"
+              />
+            </div>
+            <!--3rd card-->
+            <div class="subscription-card" style="position: relative">
+              <div class="subscription-content">
+                <p class="subscription-imprisonment">6 МЕСЯЦ</p>
+                <p class="subscription-info">24 ЗАНЯТИЯ</p>
+                <p class="subscription-info">1 ЗАНЯТИЕ В НЕДЕЛЮ</p>
+                <p class="subscription-price">24 000&ensp;</p>
+                <p class="subscription-text">
+                  /&nbsp;1&thinsp;00 рублей за занятие
+                </p>
+              </div>
+              <img
+                class="subscription-png"
+                src="/img/svg/subscription10.png"
+                alt="sub10"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!--SECTION LABORATORY-->
+        <section class="laboratory">
+          <div class="laboratory-wrapper">
+            <div class="video-wrapper"></div>
+            <h2
+              class="choice-title"
+              style="color: #231f20; margin-top: 0px; margin-bottom: 70px"
+            >
+              НАША ОНЛАЙН-ЛАБОРАТОРИЯ
+            </h2>
+            <div class="laboratory-subtitle">
+              Наша разработка - полигон с роботом. Во время занятия ученик с
+              преподавателем подключается к полигону и управляет роботом
+              удаленно.
+            </div>
+          </div>
+        </section>
+
+        <!--SECTION FULL PROFESSORS-->
+        <section class="professor">
+          <h2 class="choice-title" style="color: #231f20; margin-bottom: 120px">
+            НАШИ ПРЕПОДАВАТЕЛИ
+          </h2>
+          <div class="choice-wrapper">
+            <!--1st card-->
+            <div class="professor-card">
+              <div class="professor-avatar"></div>
+              <h3
+                class="choice-subtitle"
+                style="text-align: center; margin-bottom: 10px"
+              >
+                ИВАНОВ <br />ИВАН ИВАНОВИЧ
+              </h3>
+              <p
+                class="professor-text"
+                style="text-align: center; color: #ee5930; margin-bottom: 30px"
+              >
+                бакалавр направления "Робототехника"
+              </p>
+              <p class="professor-text">
+                Сфера научных интересов: моделированные сигналы и синтез звука,
+                применение плат Arduino для создания звуковых синтезаторов и
+                контроллеров. Помимо основной программы, ведет в Робикс
+                элективный курс по 3D-моделированию.
+              </p>
+            </div>
+            <!--2nd card-->
+            <div class="professor-card">
+              <div class="professor-avatar"></div>
+              <h3
+                class="choice-subtitle"
+                style="text-align: center; margin-bottom: 10px"
+              >
+                ИВАНОВ <br />ИВАН ИВАНОВИЧ
+              </h3>
+              <p
+                class="professor-text"
+                style="text-align: center; color: #ee5930; margin-bottom: 30px"
+              >
+                бакалавр направления "Робототехника"
+              </p>
+              <p class="professor-text">
+                Сфера научных интересов: моделированные сигналы и синтез звука,
+                применение плат Arduino для создания звуковых синтезаторов и
+                контроллеров. Помимо основной программы, ведет в Робикс
+                элективный курс по 3D-моделированию.
+              </p>
+            </div>
+            <!--3rd card-->
+            <div class="professor-card">
+              <div class="professor-avatar"></div>
+              <h3
+                class="choice-subtitle"
+                style="text-align: center; margin-bottom: 10px"
+              >
+                ИВАНОВ <br />ИВАН ИВАНОВИЧ
+              </h3>
+              <p
+                class="professor-text"
+                style="text-align: center; color: #ee5930; margin-bottom: 30px"
+              >
+                бакалавр направления "Робототехника"
+              </p>
+              <p class="professor-text">
+                Сфера научных интересов: моделированные сигналы и синтез звука,
+                применение плат Arduino для создания звуковых синтезаторов и
+                контроллеров. Помимо основной программы, ведет в Робикс
+                элективный курс по 3D-моделированию.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--SECTION FINAL-->
+        <section class="final">
+          <div class="final-wrapper">
+            <div class="wrapper-without-png final-card">
+              <h2
+                class="choice-title"
+                style="
+                  color: #231f20;
+                  margin-bottom: 60px;
+                  margin-top: 0px;
+                  text-align: left;
+                "
+              >
+                ВРЕМЯ УЧИТЬСЯ!
+              </h2>
+              <p class="professor-text">
+                Мы поможем подобрать курс в соответствии с интересами ребенка и
+                запишем на бесплатный пробный урок.
+              </p>
+              <button
+                onclick="topFunction()"
+                id="subscribe"
+                class="form-button"
+                style="position: absolute; bottom: 0px"
+              >
+                ЗАПИСАТЬСЯ
+              </button>
+
+              <script>
+                function topFunction() {
+                  document
+                    .getElementById("subscribe")
+                    .addEventListener("click", () => {
+                      document.getElementById("name").focus();
+                    });
+                }
+              </script>
+            </div>
+            <div class="png-final">
+              <img src="img/svg/Final.png" alt="png-final" />
+            </div>
+          </div>
         </section>
       </main>
     </body>
