@@ -8,7 +8,7 @@
       <title>Project404</title>
       <style type="text/css"></style>
       <link rel="stylesheet" href="./css/reset.css" />
-      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/style-mobile.css" />
     </head>
 
     <body>
@@ -20,6 +20,11 @@
               Онлайн-курсы программирования и робототехники для детей
             </h1>
 
+            <!--png-mobile-->
+            <div class="png-mobile">
+              <img src="img/svg/Frame-mobile.png" alt="png-main" />
+            </div>
+
             <form
               name="form1"
               action="<?php the_permalink();?>"
@@ -29,41 +34,41 @@
                 <legend class="form-legend">
                   Запишитесь на бесплатный пробный урок и начните свое обучение
                 </legend>
-                <p class="form-main-data">
-                  <input
-                    id="name"
-                    name="u_name"
-                    type="text"
-                    placeholder="Ваше имя"
-                    required
-                    class="form-main-field"
-                  />
-                  <input
-                    name="phone"
-                    type="tel"
-                    placeholder="Телефон"
-                    required
-                    class="form-main-field"
-                  />
+                <!--<p class="form-main-data">-->
+                <input
+                  id="name"
+                  name="u_name"
+                  type="text"
+                  placeholder="Ваше имя"
+                  required
+                  class="form-main-field"
+                />
+                <input
+                  name="phone"
+                  type="tel"
+                  placeholder="Телефон"
+                  required
+                  class="form-main-field"
+                />
 
-                  <select
-                    name="connect"
-                    id="connect-select"
-                    class="form-main-field"
-                  >
-                    <option value="ring">Звонок</option>
-                    <option value="whatsapp">WhattsApp</option>
-                  </select>
+                <select
+                  name="connect"
+                  id="connect-select"
+                  class="form-main-field"
+                >
+                  <option value="ring">Звонок</option>
+                  <option value="whatsapp">WhattsApp</option>
+                </select>
 
-                  <button
-                    type="submit"
-                    form="form1"
-                    value="Submit"
-                    class="form-button"
-                  >
-                    ЗАПИСАТЬСЯ
-                  </button>
-                </p>
+                <button
+                  type="submit"
+                  form="form1"
+                  value="Submit"
+                  class="form-button"
+                >
+                  ЗАПИСАТЬСЯ
+                </button>
+                <!--</p>-->
                 <legend class="form-legend-post">
                   Нажимая эту кнопку вы соглашаетесь с политикой
                   конфиденциальности
@@ -81,11 +86,20 @@
           <h2 class="choice-title">НАС ВЫБИРАЮТ РОДИТЕЛИ, ПОТОМУ ЧТО …</h2>
           <div class="choice-wrapper">
             <div class="choice-card">
+              <!--desctopImg-->
               <div class="png-choice">
                 <img
                   class="png-icon"
                   src="img/svg/Choice/icon-1.png"
                   alt="choice-1"
+                />
+              </div>
+              <!--MobileImg-->
+              <div class="png-choice-mobile">
+                <img
+                  class="png-icon"
+                  src="img/svg/Choice/Choice-mobile/icon-2-1.png"
+                  alt="choice-mobile-1"
                 />
               </div>
               <h3 class="choice-subtitle">
