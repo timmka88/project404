@@ -84,6 +84,10 @@ body {
   flex-direction: column;
 }
 
+.png-mobile{
+  display: none;
+}
+
 .card-title {
   max-width: 727px;
   height: 155px;
@@ -234,11 +238,19 @@ body {
   margin: 20px;
 }
 
+.png-choice-mobile{
+  display: none;
+}
+
 .png-icon {
   border: none;
   /*-webkit-border-radius: 15px;
   -moz-border-radius: 15px;*/
   border-radius: 15px;
+}
+
+.png-open{
+  display: none;
 }
 
 .choice-subtitle {
