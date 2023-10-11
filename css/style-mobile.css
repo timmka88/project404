@@ -454,8 +454,8 @@ body {
 
 /*subscription style*/
 .subscription {
-  max-width: 1920px;
-  height: 705px;
+  max-width: 500px;
+  /*height: 705px;*/
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -463,34 +463,49 @@ body {
   background-color: #ee5930;
   border: none;
   border-radius: 20px;
+  padding-bottom: 40px;
 }
 
-.subscription-card {
-  width: 424px;
-  height: 285px;
-  background-color: white;
+/*.choice {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #ee5930;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
   border: none;
   border-radius: 20px;
+} */
+
+.subscription-card {
+  width: 299px;
+  height: 195px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 4px;
 }
 
 .subscription-content {
-  margin-top: 25px;
-  margin-left: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .subscription-imprisonment {
   text-align: start;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   line-height: auto;
   letter-spacing: 0%;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: #231f20;
 }
 
 .subscription-info {
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 0px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 5%;
   line-height: auto;
@@ -499,38 +514,45 @@ body {
 
 .subscription-price {
   text-align: left;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   line-height: auto;
   letter-spacing: 0%;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 20px;
   color: #ee5930;
 }
 
 .subscription-price:after {
   content: "\20BD";
-  font-size: 34px;
+  font-size: 22px;
   font-weight: 100;
 }
 
 .subscription-text {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 130%;
   line-height: auto;
   text-align: left;
 }
 
 .subscription-png {
+  display: none;
   position: absolute;
   top: -15px;
   right: -15px;
 }
 
+.subscription-png-mobile {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 /*laboratory style*/
 .laboratory {
-  max-width: 1920px;
-  height: 1015px;
+  max-width: 500px;
+  height: 638px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -540,31 +562,42 @@ body {
 }
 
 .laboratory-wrapper {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
-  width: 1280px;
-  height: 680px;
-  margin: auto;
+  width: 320px;
+  height: 638px;
+}
+
+.lab-mobile-title{
+  margin: 0 auto;
+  width: 301px;
+  color: #231f20;
+  font-size: 22px;
+  line-height: auto;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+  margin-top: 80px;
 }
 
 .laboratory-subtitle {
-  width: 744px;
-  height: 46px;
+  width: 300px;
+  /*height: 46px;*/
   margin-left: auto;
   margin-right: auto;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 130%;
   line-height: auto;
-  text-align: center;
+  text-align: left;
 }
 
 .video-wrapper {
   position: absolute;
-  bottom: 0px;
-  width: 1280px;
-  height: 500px;
+  bottom: 60px;
+  width: 300px;
+  height: 300px;
   border: none;
   border-radius: 20px;
   background-color: bisque;
@@ -572,7 +605,7 @@ body {
 
 /*full professors style*/
 .professor {
-  max-width: 1920px;
+  max-width: 500px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -586,8 +619,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 424px;
-  height: 545px;
+  width: 300px;
+  /*height: 356px;*/
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -595,6 +628,11 @@ body {
   background-color: #f1f5f9;
   border: none;
   border-radius: 20px;
+}
+
+.professor-title-mobile{
+  color: #231f20;
+  margin-top: 60px;
 }
 
 .professor-avatar {
@@ -609,16 +647,18 @@ body {
 }
 
 .professor-text {
-  font-size: 18px;
+  width: 259px;
+  font-size: 16px;
   letter-spacing: 130%;
   line-height: auto;
   text-align: left;
+  margin-bottom: 40px;
 }
 
 /*final style*/
 .final {
-  max-width: 1920px;
-  height: 800px;
+  max-width: 500px;
+  /*height: 800px;*/
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -626,15 +666,15 @@ body {
 }
 
 .final-wrapper {
-  width: 1280px;
-  height: 578px;
+  width: 320px;
+  /*height: 578px;*/
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   background-color: #f1f5f9;
   border: none;
   border-radius: 20px;
@@ -642,17 +682,36 @@ body {
 
 .final-card {
   position: relative;
-  width: 428px;
-  height: 270px;
-  margin-left: 80px;
-  margin-top: 160px;
+  margin: 0 auto;
+  width: 301px;
+  /*height: 220px;*/
+  /*margin-left: 80px;
+  margin-top: 160px;*/
+}
+
+.final-title{
+  color: #231f20;
+}
+
+.final-text{
+  width: 298px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .png-final {
+  display: none;
   margin-top: 36px;
   margin-right: 97px;
   height: 506px;
   width: 506px;
+}
+
+.png-final-mobile {
+  /*margin-top: 36px;
+  margin-right: 97px;*/
+  height: 287px;
+  width: 300px;
 }
 
 /*.final-wrapper {

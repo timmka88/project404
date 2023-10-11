@@ -414,6 +414,13 @@ body {
   right: -15px;
 }
 
+.subscription-png-mobile {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 /*laboratory style*/
 .laboratory {
   max-width: 1920px;
@@ -434,6 +441,12 @@ body {
   width: 1280px;
   height: 680px;
   margin: auto;
+}
+
+.lab-mobile-title{
+  color: #231f20;
+  margin-top: 0px;
+  margin-bottom: 70px;
 }
 
 .laboratory-subtitle{
@@ -482,6 +495,11 @@ body {
   background-color: #f1f5f9;
   border: none;
   border-radius: 20px;
+}
+
+.professor-title-mobile{
+  color: #231f20;
+  margin-bottom: 120px;
 }
 
 .professor-avatar{
@@ -535,11 +553,22 @@ body {
   margin-top: 160px;
 }
 
+.final-title{
+  color: #231f20;
+  margin-bottom: 60px;
+  margin-top: 0px;
+  text-align: left;
+}
+
 .png-final {
   margin-top: 36px;
   margin-right: 97px;
   height: 506px;
   width: 506px;
+}
+
+.png-final-mobile{
+  display: none;
 }
 
 /*.final-wrapper {
