@@ -115,14 +115,11 @@
                   почтой в любую точку мира.
                 </p>
               </div>
-              <button
-                class="png-open"
-                style="
-                  background-image: url(img/svg/Choice/Choice-mobile/png-open.png);
-                  background-size: cover;
-                "
-                id="choice-card-button"
-              ></button>
+              <img
+                class="svg-open"
+                src="img/svg/Choice/Choice-mobile/svg-open.svg"
+                alt="svg-open"
+              />
             </div>
 
             <!--2nd-->
@@ -151,14 +148,11 @@
                   и моделирование.
                 </p>
               </div>
-              <button
-                class="png-open"
-                style="
-                  background-image: url(img/svg/Choice/Choice-mobile/png-open.png);
-                  background-size: cover;
-                "
-                id="choice-card-button-2"
-              ></button>
+              <img
+                class="svg-open"
+                src="img/svg/Choice/Choice-mobile/svg-open.svg"
+                alt="svg-open"
+              />
             </div>
 
             <!--3rd-->
@@ -186,14 +180,11 @@
                   наставника.
                 </p>
               </div>
-              <button
-                class="png-open"
-                style="
-                  background-image: url(img/svg/Choice/Choice-mobile/png-open.png);
-                  background-size: cover;
-                "
-                id="choice-card-button-3"
-              ></button>
+              <img
+                class="svg-open"
+                src="img/svg/Choice/Choice-mobile/svg-open.svg"
+                alt="svg-open"
+              />
             </div>
 
             <!--4th-->
@@ -220,14 +211,11 @@
                   индивидуальному плану в комфортном темпе для ребенка.
                 </p>
               </div>
-              <button
-                class="png-open"
-                style="
-                  background-image: url(img/svg/Choice/Choice-mobile/png-open.png);
-                  background-size: cover;
-                "
-                id="choice-card-button-4"
-              ></button>
+              <img
+                class="svg-open"
+                src="img/svg/Choice/Choice-mobile/svg-open.svg"
+                alt="svg-open"
+              />
             </div>
 
             <!--5th-->
@@ -254,14 +242,11 @@
                   налоговый вычет за обучение.
                 </p>
               </div>
-              <button
-                class="png-open"
-                style="
-                  background-image: url(img/svg/Choice/Choice-mobile/png-open.png);
-                  background-size: cover;
-                "
-                id="choice-card-button-5"
-              ></button>
+              <img
+                class="svg-open"
+                src="img/svg/Choice/Choice-mobile/svg-open.svg"
+                alt="svg-open"
+              />
             </div>
 
             <!--6th-->
@@ -287,16 +272,21 @@
                   Всегда готовы пойти навстречу и пересчитать занятия.
                 </p>
               </div>
-              <button
-                class="png-open"
+              <img
+                class="svg-open"
+                src="img/svg/Choice/Choice-mobile/svg-open.svg"
+                alt="svg-open"
+              />
+              <!--<img
+                class="svg-open"
                 style="
-                  background-image: url(img/svg/Choice/Choice-mobile/png-open.png);
+                  background-image: url(img/svg/Choice/Choice-mobile/svg-open.svg);
                   background-size: cover;
                 "
                 id="choice-card-button-6"
-              ></button>
+              ></img>-->
             </div>
-
+            <!--
             <script>
               document.addEventListener("DOMContentLoaded", function () {
                 const addButtonList = document.querySelectorAll(".png-open");
@@ -308,11 +298,33 @@
                     if (hideSectionList[i].style.display === "none") {
                       hideSectionList[i].style.display = "block";
                       addButtonList[i].style.backgroundImage =
-                        "url(img/svg/Choice/Choice-mobile/png-close.png)";
+                        "url(img/svg/Choice/Choice-mobile/svg-close.svg)";
                     } else {
                       hideSectionList[i].style.display = "none";
                       addButtonList[i].style.backgroundImage =
-                        "url(img/svg/Choice/Choice-mobile/png-open.png)";
+                        "url(img/svg/Choice/Choice-mobile/svg-open.svg)";
+                    }
+                  });
+                }
+              });
+            </script> -->
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const addButtonList = document.querySelectorAll(".choice-card");
+                const hideSectionList =
+                  document.querySelectorAll(".hide-choice-card");
+                const imgList = document.querySelectorAll(".svg-open");
+
+                for (let i = 0; i < 6; i++) {
+                  addButtonList[i].addEventListener("click", function () {
+                    if (hideSectionList[i].style.display === "none") {
+                      hideSectionList[i].style.display = "block";
+                      imgList[i].src =
+                        "img/svg/Choice/Choice-mobile/svg-close.svg";
+                    } else {
+                      hideSectionList[i].style.display = "none";
+                      imgList[i].src =
+                        "img/svg/Choice/Choice-mobile/svg-open.svg";
                     }
                   });
                 }
@@ -366,7 +378,7 @@
                   class="courses-link"
                 >
                   <img
-                    src="/img/svg/Courses/courses-link.png"
+                    src="/img/svg/Courses/courses-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -409,7 +421,7 @@
                   class="courses-link"
                 >
                   <img
-                    src="/img/svg/Courses/courses-link.png"
+                    src="/img/svg/Courses/courses-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -452,7 +464,7 @@
                   class="courses-link"
                 >
                   <img
-                    src="/img/svg/Courses/courses-link.png"
+                    src="/img/svg/Courses/courses-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -495,7 +507,7 @@
                   class="courses-link"
                 >
                   <img
-                    src="/img/svg/Courses/courses-link.png"
+                    src="/img/svg/Courses/courses-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -537,7 +549,7 @@
                   class="courses-link"
                 >
                   <img
-                    src="/img/svg/Courses/courses-link.png"
+                    src="/img/svg/Courses/courses-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -580,7 +592,7 @@
                   class="courses-link"
                 >
                   <img
-                    src="/img/svg/Courses/courses-link.png"
+                    src="/img/svg/Courses/courses-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -590,6 +602,7 @@
               class="hide-section choice-wrapper"
               style="display: none; justify-content: start"
             >
+            <!--7th-->
               <div
                 class="courses-card"
                 style="position: relative; margin-right: 4px"
@@ -630,11 +643,12 @@
                   class="courses-link"
                 >
                   <img
-                    src="/img/svg/Courses/courses-link.png"
+                    src="/img/svg/Courses/courses-link.svg"
                     alt="courses-link"
                   />
                 </a>
               </div>
+              <!--8th-->
               <div class="courses-card" style="position: relative">
                 <div class="png-choice">
                   <img
@@ -672,7 +686,7 @@
                   class="courses-link"
                 >
                   <img
-                    src="/img/svg/Courses/courses-link.png"
+                    src="/img/svg/Courses/courses-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -728,13 +742,13 @@
                 </p>
               </div>
               <img
-                class="subscription-png"
-                src="/img/svg/subscription5.png"
+                class="subscription-svg"
+                src="/img/svg/subscription5.svg"
                 alt="sub5"
               />
               <img
-                class="subscription-png-mobile"
-                src="/img/svg/subscription5-mobile.png"
+                class="subscription-svg-mobile"
+                src="/img/svg/subscription5-mobile.svg"
                 alt="sub5-mobile"
               />
             </div>
@@ -750,13 +764,13 @@
                 </p>
               </div>
               <img
-                class="subscription-png"
-                src="/img/svg/subscription10.png"
+                class="subscription-svg"
+                src="/img/svg/subscription10.svg"
                 alt="sub10"
               />
               <img
-                class="subscription-png-mobile"
-                src="/img/svg/subscription10-mobile.png"
+                class="subscription-svg-mobile"
+                src="/img/svg/subscription10-mobile.svg"
                 alt="sub10-mobile"
               />
             </div>
@@ -780,9 +794,7 @@
 
         <!--SECTION FULL PROFESSORS-->
         <section class="professor">
-          <h2
-            class="choice-title professor-title-mobile"
-          >
+          <h2 class="choice-title professor-title-mobile">
             НАШИ ПРЕПОДАВАТЕЛИ
           </h2>
           <div class="choice-wrapper">
@@ -859,11 +871,7 @@
         <section class="final">
           <div class="final-wrapper">
             <div class="wrapper-without-png final-card">
-              <h2
-                class="choice-title final-title"
-              >
-                ВРЕМЯ УЧИТЬСЯ!
-              </h2>
+              <h2 class="choice-title final-title">ВРЕМЯ УЧИТЬСЯ!</h2>
               <p class="professor-text final-text">
                 Мы поможем подобрать курс в соответствии с интересами ребенка и
                 запишем на бесплатный пробный урок.

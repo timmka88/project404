@@ -139,7 +139,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  height: 311px;
+  height: 162px;
   width: 300px;
 }
 
@@ -297,15 +297,16 @@ body {
   border-radius: 15px;
 }
 
-.png-open {
+.svg-open {
   position: absolute;
   bottom: 0px;
   right: 0px;
   margin-bottom: 0px;
-  width: 35px;
-  height: 35px;
-  border: none;
-  border-radius: 35px;
+  width: 36px;
+  height: 36px;
+  border: 5px solid;
+  border-color: #ee5930;
+  border-radius: 36px;
   /*background-image: url('');
   background-size: cover;*/
 }
@@ -480,7 +481,7 @@ body {
 } */
 
 .subscription-card {
-  width: 299px;
+  width: 300px;
   height: 195px;
   background-color: white;
   border: none;
@@ -536,14 +537,14 @@ body {
   text-align: left;
 }
 
-.subscription-png {
+.subscription-svg {
   display: none;
   position: absolute;
   top: -15px;
   right: -15px;
 }
 
-.subscription-png-mobile {
+.subscription-svg-mobile {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -562,13 +563,13 @@ body {
 }
 
 .laboratory-wrapper {
+  position: relative;
+  width: 320px;
+  height: 638px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  position: relative;
-  width: 320px;
-  height: 638px;
 }
 
 .lab-mobile-title{
@@ -595,6 +596,8 @@ body {
 
 .video-wrapper {
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
   bottom: 60px;
   width: 300px;
   height: 300px;
