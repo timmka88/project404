@@ -548,6 +548,10 @@ body {
   position: absolute;
   top: 0px;
   right: 0px;
+  width: 82px;
+  height: 82px;
+  border: none;
+  border-radius: 82px;
 }
 
 /*laboratory style*/
