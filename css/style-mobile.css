@@ -585,6 +585,7 @@ body {
   letter-spacing: 0%;
   margin-bottom: 10px;
   margin-top: 80px;
+  text-align: center;
 }
 
 .laboratory-subtitle {
@@ -600,8 +601,7 @@ body {
 
 .video-wrapper {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
   bottom: 60px;
   width: 300px;
   height: 300px;
@@ -623,6 +623,7 @@ body {
 }
 
 .professor-card {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -637,6 +638,10 @@ body {
   border-radius: 20px;
 }
 
+.hide-professor-card{
+  display: none;
+}
+
 .professor-title-mobile{
   color: #231f20;
   margin-top: 60px;
@@ -645,8 +650,7 @@ body {
 .professor-avatar {
   width: 200px;
   height: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-bottom: 20px;
   border: none;
   border-radius: 100px;
@@ -660,6 +664,18 @@ body {
   line-height: auto;
   text-align: left;
   margin-bottom: 40px;
+}
+
+.svg-professor-open {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  width: 46px;
+  height: 46px;
+  /*border: 5px solid;
+  border-color: #ee5930;*/
+  border-radius: 46px;
 }
 
 /*final style*/

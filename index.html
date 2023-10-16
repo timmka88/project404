@@ -317,14 +317,14 @@
 
                 for (let i = 0; i < 6; i++) {
                   addButtonList[i].addEventListener("click", function () {
-                    if (hideSectionList[i].style.display === "none") {
-                      hideSectionList[i].style.display = "block";
-                      imgList[i].src =
-                        "img/svg/Choice/Choice-mobile/svg-close.svg";
-                    } else {
+                    if (hideSectionList[i].style.display === "block") {
                       hideSectionList[i].style.display = "none";
                       imgList[i].src =
                         "img/svg/Choice/Choice-mobile/svg-open.svg";
+                    } else {
+                      hideSectionList[i].style.display = "block";
+                      imgList[i].src =
+                        "img/svg/Choice/Choice-mobile/svg-close.svg";
                     }
                   });
                 }
@@ -602,7 +602,7 @@
               class="hide-section choice-wrapper"
               style="display: none; justify-content: start"
             >
-            <!--7th-->
+              <!--7th-->
               <div
                 class="courses-card"
                 style="position: relative; margin-right: 4px"
@@ -706,8 +706,15 @@
               addButton.addEventListener("click", function () {
                 if (hideSection.style.display === showSection.style.display) {
                   hideSection.style.display = "none";
+                  addButton.innerText = "БОЛЬШЕ КУРСОВ";
+                  addButton.scrollIntoView({
+                    behavior: "smooth",
+                    block: "end",
+                    inline: "nearest",
+                  });
                 } else {
                   hideSection.style.display = showSection.style.display;
+                  addButton.innerText = "МЕНЬШЕ КУРСОВ";
                 }
               });
             });
@@ -813,12 +820,19 @@
               >
                 бакалавр направления "Робототехника"
               </p>
-              <p class="professor-text">
-                Сфера научных интересов: моделированные сигналы и синтез звука,
-                применение плат Arduino для создания звуковых синтезаторов и
-                контроллеров. Помимо основной программы, ведет в Робикс
-                элективный курс по 3D-моделированию.
-              </p>
+              <div class="hide-professor-card">
+                <p class="professor-text">
+                  Сфера научных интересов: моделированные сигналы и синтез
+                  звука, применение плат Arduino для создания звуковых
+                  синтезаторов и контроллеров. Помимо основной программы, ведет
+                  в Робикс элективный курс по 3D-моделированию.
+                </p>
+              </div>
+              <img
+                class="svg-professor-open"
+                src="img/svg/Professors/prof-link-open.svg"
+                alt="svg-professor-open"
+              />
             </div>
             <!--2nd card-->
             <div class="professor-card">
@@ -835,12 +849,19 @@
               >
                 бакалавр направления "Робототехника"
               </p>
-              <p class="professor-text">
-                Сфера научных интересов: моделированные сигналы и синтез звука,
-                применение плат Arduino для создания звуковых синтезаторов и
-                контроллеров. Помимо основной программы, ведет в Робикс
-                элективный курс по 3D-моделированию.
-              </p>
+              <div class="hide-professor-card">
+                <p class="professor-text">
+                  Сфера научных интересов: моделированные сигналы и синтез
+                  звука, применение плат Arduino для создания звуковых
+                  синтезаторов и контроллеров. Помимо основной программы, ведет
+                  в Робикс элективный курс по 3D-моделированию.
+                </p>
+              </div>
+              <img
+                class="svg-professor-open"
+                src="img/svg/Professors/prof-link-open.svg"
+                alt="svg-professor-open"
+              />
             </div>
             <!--3rd card-->
             <div class="professor-card">
@@ -857,13 +878,44 @@
               >
                 бакалавр направления "Робототехника"
               </p>
-              <p class="professor-text">
-                Сфера научных интересов: моделированные сигналы и синтез звука,
-                применение плат Arduino для создания звуковых синтезаторов и
-                контроллеров. Помимо основной программы, ведет в Робикс
-                элективный курс по 3D-моделированию.
-              </p>
+              <div class="hide-professor-card">
+                <p class="professor-text">
+                  Сфера научных интересов: моделированные сигналы и синтез
+                  звука, применение плат Arduino для создания звуковых
+                  синтезаторов и контроллеров. Помимо основной программы, ведет
+                  в Робикс элективный курс по 3D-моделированию.
+                </p>
+              </div>
+              <img
+                class="svg-professor-open"
+                src="img/svg/Professors/prof-link-open.svg"
+                alt="svg-professor-open"
+              />
             </div>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const addButtonList =
+                  document.querySelectorAll(".professor-card");
+                const hideSectionList = document.querySelectorAll(
+                  ".hide-professor-card"
+                );
+                const imgList = document.querySelectorAll(
+                  ".svg-professor-open"
+                );
+
+                for (let i = 0; i < addButtonList.length + 1; i++) {
+                  addButtonList[i].addEventListener("click", function () {
+                    if (hideSectionList[i].style.display === "block") {
+                      hideSectionList[i].style.display = "none";
+                      imgList[i].src = "img/svg/Professors/prof-link-open.svg";
+                    } else {
+                      hideSectionList[i].style.display = "block";
+                      imgList[i].src = "img/svg/Professors/prof-link-close.svg";
+                    }
+                  });
+                }
+              });
+            </script>
           </div>
         </section>
 
@@ -877,7 +929,6 @@
                 запишем на бесплатный пробный урок.
               </p>
               <button
-                onclick="topFunction()"
                 id="subscribe"
                 class="form-button"
                 style="position: absolute; bottom: 0px"
@@ -886,6 +937,21 @@
               </button>
 
               <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const butt = document.getElementById("subscribe");
+                  const form = document.getElementById("name");
+                  butt.addEventListener("click", function () {
+                    form.scrollIntoView({
+                      behavior: "smooth",
+                      block: "end",
+                      inline: "nearest",
+                    });
+                    form.focus({ preventScroll: true });
+                  });
+                });
+              </script>
+
+              <!--<script>
                 function topFunction() {
                   document
                     .getElementById("subscribe")
@@ -893,7 +959,7 @@
                       document.getElementById("name").focus();
                     });
                 }
-              </script>
+              </script>  -->
             </div>
             <div class="png-final">
               <img src="img/svg/Final.png" alt="png-final" />

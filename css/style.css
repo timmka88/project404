@@ -65,7 +65,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   margin-bottom: 100px;
 }
@@ -284,7 +284,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: white;
@@ -522,6 +522,10 @@ body {
   letter-spacing: 130%;
   line-height: auto;
   text-align: left;
+}
+
+.svg-professor-open{
+  display: none;
 }
 
 /*final style*/
