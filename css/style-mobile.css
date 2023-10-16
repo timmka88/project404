@@ -539,19 +539,16 @@ body {
 
 .subscription-svg {
   display: none;
-  position: absolute;
-  top: -15px;
-  right: -15px;
 }
 
 .subscription-svg-mobile {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 82px;
-  height: 82px;
+  width: 84px;
+  height: 84px;
   border: none;
-  border-radius: 82px;
+  border-radius: 84px;
 }
 
 /*laboratory style*/
