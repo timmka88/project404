@@ -327,6 +327,7 @@
                 }
               });
             </script> -->
+
             <script>
               document.addEventListener("DOMContentLoaded", function () {
                 const addButtonList = document.querySelectorAll(".choice-card");
@@ -335,8 +336,9 @@
                 const imgList = document.querySelectorAll(".svg-open");
                 const choiceConst = document.querySelector(".png-main-640");
                 const wrapperList = document.querySelectorAll(".js-wrapper");
+                
 
-                if (choiceConst.style.display === "none") {
+                if (window.matchMedia("(max-width: 639px)").matches) {
 
                 for (let i = 0; i < 6; i++) {
                   addButtonList[i].addEventListener("click", function () {
@@ -351,7 +353,7 @@
                     }
                   });
                 }
-              } else {
+              } else if (window.matchMedia("(min-width: 640px)").matches) {
                 for (let i = 0; i < 3; i++) {
                   wrapperList[i].addEventListener("click", function () {
                     if (hideSectionList[2*i].style.display === "block") {
@@ -371,9 +373,75 @@
                     }
                   });
                 }
-              }
+              } else launchRocket();
               });
             </script>
+            <!--
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const addButtonList = document.querySelectorAll(".choice-card");
+                const hideSectionList =
+                  document.querySelectorAll(".hide-choice-card");
+                const imgList = document.querySelectorAll(".svg-open");
+                const choiceConst = document.querySelector(".png-main-640");
+                const wrapperList = document.querySelectorAll(".js-wrapper");
+                
+
+                if (window.matchMedia("(max-width: 639px)")) {
+
+                for (let i = 0; i < 6; i++) {
+                  addButtonList[i].addEventListener("click", function () {
+                    if (hideSectionList[i].style.display === "block") {
+                      hideSectionList[i].style.display = "none";
+                      imgList[i].src =
+                        "img/svg/Choice/Choice-mobile/svg-open.svg";
+                    } else {
+                      hideSectionList[i].style.display = "block";
+                      imgList[i].src =
+                        "img/svg/Choice/Choice-mobile/svg-close.svg";
+                    }
+                  });
+                }
+              } else if (window.matchMedia("(min-width: 640px)")){
+                for (let i = 0; i < 3; i++) {
+                  wrapperList[i].addEventListener("click", function () {
+                    if (hideSectionList[2*i].style.display === "block") {
+                      hideSectionList[2*i].style.display = "none";
+                      hideSectionList[2*i+1].style.display = "none";
+                      imgList[2*i].src =
+                        "img/svg/Choice/Choice-mobile/svg-open.svg";
+                        imgList[2*i+1].src =
+                        "img/svg/Choice/Choice-mobile/svg-open.svg";  
+                    } else {
+                      hideSectionList[2*i].style.display = "block";
+                      imgList[2*i].src =
+                        "img/svg/Choice/Choice-mobile/svg-close.svg";
+                        hideSectionList[2*i+1].style.display = "block";
+                      imgList[2*i+1].src =
+                        "img/svg/Choice/Choice-mobile/svg-close.svg";
+                    }
+                  });
+                }
+              } else launchRocket();
+              });
+            </script>
+          -->
+<!--
+const para = document.querySelector("p"); // This is the UI element where to display the text
+const mql = window.matchMedia("(max-width: 600px)");
+
+mql.addEventListener("change", (event) => {
+  if (event.matches) {
+    // The viewport is 600 pixels wide or less
+    para.textContent = "This is a narrow screen — less than 600px wide.";
+    document.body.style.backgroundColor = "red";
+  } else {
+    // The viewport is more than 600 pixels wide
+    para.textContent = "This is a wide screen — more than 600px wide.";
+    document.body.style.backgroundColor = "blue";
+  }
+});  -->
+
           </div>
         </section>
 
@@ -799,7 +867,7 @@
               />
               <img
                 class="subscription-svg-mobile"
-                src="/img/svg/subscription5-mobile.svg"
+                src="./img/svg/subscription5-mobile.svg"
                 alt="sub5-mobile"
               />
             </div>
