@@ -92,7 +92,7 @@ body {
 
 /*card style */
 .card {
-  max-width: 500px;
+  max-width: 639px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -143,6 +143,10 @@ body {
   width: 300px;
 }
 
+.png-main-640{
+  display: none;
+}
+
 .form-main {
   /*text-align: right;*/
   width: 300px;
@@ -161,6 +165,10 @@ body {
   margin-bottom: 20px;
 }
 
+.form-legend-640{
+  display: none;
+}
+
 .form-legend-post {
   width: 300px;
   height: 34px;
@@ -169,6 +177,10 @@ body {
   letter-spacing: 5%;
   text-align: left;
   margin-bottom: 20px;
+}
+
+.form-legend-post-640{
+  display: none;
 }
 
 .form-main-data {
@@ -218,7 +230,7 @@ body {
 
 /*choice style */
 .choice {
-  max-width: 500px;
+  max-width: 639px;
   /*height: 1304px;*/
   margin: 0 auto;
   display: flex;
@@ -357,7 +369,7 @@ body {
 
 /*courses style*/
 .courses {
-  max-width: 500px;
+  max-width: 639px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -455,7 +467,7 @@ body {
 
 /*subscription style*/
 .subscription {
-  max-width: 500px;
+  max-width: 639px;
   /*height: 705px;*/
   margin: 0 auto;
   display: flex;
@@ -549,7 +561,7 @@ body {
 
 /*laboratory style*/
 .laboratory {
-  max-width: 500px;
+  max-width: 639px;
   height: 638px;
   margin: 0 auto;
   display: flex;
@@ -605,7 +617,7 @@ body {
 
 /*full professors style*/
 .professor {
-  max-width: 500px;
+  max-width: 639px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -673,7 +685,7 @@ body {
 
 /*final style*/
 .final {
-  max-width: 500px;
+  max-width: 639px;
   /*height: 800px;*/
   margin: 0 auto;
   display: flex;

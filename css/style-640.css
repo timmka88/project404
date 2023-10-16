@@ -60,14 +60,59 @@ body {
   color: #231f20;
 }
 
+.title-1 {
+  font-family: "Jura";
+  font-size: 24px;
+  line-height: 108%;
+  letter-spacing: -0.5%;
+}
+
+.title-2 {
+  font-family: "Jura";
+  font-size: 22px;
+  font-weight: bolder;
+  line-height: normal;
+  letter-spacing: 0%;
+}
+
+.btn-mobile {
+  font-family: "Jura";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 5%;
+}
+
+.txt-mob {
+  font-family: "Jura";
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
 /*card style */
 .card {
-  max-width: 1280px;
+  max-width: 1279px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+.wrapper-640{
+  width: 601px;
   margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  margin-bottom: 100px;
+}
+
+.wrapper-640-without-png{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /*.wrapper {
@@ -82,54 +127,76 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
-
-.png-mobile{
-  display: none;
+  justify-content: left;
 }
 
 .card-title {
-  max-width: 727px;
-  height: 155px;
-  font-size: 56px;
+  max-width: 300px;
+  height: 67px;
+  font-size: 24px;
   line-height: 108%;
   letter-spacing: -0.5%;
-  margin-top: 103px;
-  margin-bottom: 50px;
+  margin-top: 1px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .png-main {
+  display: none;
   margin-top: 103px;
   height: 556px;
   width: 546px;
 }
 
-.png-main-640{
+.png-mobile {
   display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  height: 162px;
+  width: 300px;
+}
+
+.png-main-640{
+  height: 138px;
+  width: 299px;
 }
 
 .form-main {
-  text-align: right;
-  width: 430px;
-  height: 372.3px;
+  /*text-align: right;*/
+  width: 600px;
+  /*height: 372.3px;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-legend {
-  width: 380px;
-  height: 46px;
-  font-size: 18px;
+  display: none;
+  width: 300px;
+  height: 31px;
+  font-size: 16px;
   line-height: 130%;
   letter-spacing: 0%;
   text-align: left;
   margin-bottom: 20px;
 }
 
-.form-legend-640{
-  display: none;
+.form-legend-640 {
+  width: 300px;
+  height: 31px;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .form-legend-post {
-  width: 380px;
+  display: none;
+  width: 300px;
   height: 34px;
   font-size: 14px;
   line-height: auto;
@@ -139,7 +206,13 @@ body {
 }
 
 .form-legend-post-640{
-  display: none;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: auto;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .form-main-data {
@@ -150,13 +223,13 @@ body {
 
 .form-main-field {
   font-family: "Jura";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 130%;
   letter-spacing: 0%;
-  width: 430px;
-  height: 61px;
+  width: 600px;
+  height: 43px;
   background-color: #f1f5f9;
-  padding: 20px;
+  padding-left: 20px;
   border: 0;
   margin-bottom: 5px;
   border: none;
@@ -165,22 +238,22 @@ body {
 
 .form-main-data::placeholder {
   font-family: "Jura";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 130%;
   letter-spacing: 0%;
 }
 
 .form-button {
   font-family: "Jura";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: white;
   line-height: 130%;
   letter-spacing: 5%;
-  width: 430px;
-  height: 61px;
+  width: 600px;
+  height: 43px;
   background-color: #ee5930;
-  padding: 20px;
+  /*padding: 20px;*/
   border: 0;
   margin-bottom: 5px;
   border: none;
@@ -189,16 +262,17 @@ body {
 
 /*choice style */
 .choice {
-  max-width: 1920px;
-  height: 1304px;
+  max-width: 1279px;
+  /*height: 1304px;*/
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #ee5930;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
   border: none;
   border-radius: 20px;
-  margin-bottom: 60px;
 }
 
 /*wrapper {
@@ -211,20 +285,22 @@ body {
 }*/
 
 .choice-title {
-  /*max-width: 623px;
-  height: 20.51px;*/
+  width: 429px;
+  /*height: 14px;*/
   text-align: center;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   line-height: auto;
   letter-spacing: 0%;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
 }
 
 .choice-wrapper {
-  width: 1280px;
+  width: 604px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -233,11 +309,12 @@ body {
 }
 
 .choice-card {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 424px;
-  height: 460px;
+  width: 300px;
+  /*max-height: 351px;*/
   margin-bottom: 4px;
   background-color: white;
   border: none;
@@ -245,13 +322,16 @@ body {
 }
 
 .png-choice {
+  display: none;
   width: 384px;
   height: 200px;
   margin: 20px;
 }
 
-.png-choice-mobile{
-  display: none;
+.png-choice-mobile {
+  width: 260px;
+  height: 100px;
+  margin: 20px;
 }
 
 .png-icon {
@@ -261,72 +341,142 @@ body {
   border-radius: 15px;
 }
 
-.svg-open{
+.svg-open {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  width: 36px;
+  height: 36px;
+  border: 5px solid;
+  border-color: #ee5930;
+  border-radius: 36px;
+  /*background-image: url('');
+  background-size: cover;*/
+}
+
+/*.show-choice-card{
+  display: block;
+}*/
+
+.hide-choice-card {
   display: none;
 }
 
+/*.courses-link {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  margin-bottom: 0px;
+} */
+
 .choice-subtitle {
-  max-width: 384px;
-  height: 42px;
+  max-width: 230px;
+  /*height: 38px;*/
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 5%;
   line-height: auto;
   text-align: left;
 }
 
+/*.choice-text {
+  display: none;
+}*/
+
 .choice-text {
-  width: 384px;
+  width: 260px;
   max-height: 147px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  font-size: 18px;
-  letter-spacing: 130%;
-  line-height: auto;
+  font-size: 16px;
+  letter-spacing: 0%;
+  line-height: 130%;
   text-align: left;
+}
+
+.js-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 /*courses style*/
 .courses {
-  max-width: 1920px;
+  max-width: 639px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   background-color: white;
 }
+
+/*.choice {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #ee5930;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  border: none;
+  border-radius: 20px;
+}*/
 
 .courses-card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 424px;
-  height: 480px;
+  width: 300px;
+  /*height: 350px;*/
   margin-bottom: 4px;
   background-color: #f1f5f9;
   border: none;
   border-radius: 20px;
 }
 
+/*.choice-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 4px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+}*/
+
+.png-choice-mobile-200 {
+  width: 260px;
+  height: 200px;
+  margin: 20px;
+}
+
 .courses-text {
-  width: 384px;
+  width: 259px;
   max-height: 147px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
-  font-size: 18px;
+  /*margin-bottom: 20px;*/
+  font-size: 16px;
   letter-spacing: 130%;
   line-height: auto;
   text-align: left;
 }
 
+.hide-courses-text{
+  display: none;
+}
+
 .number-of-lessons {
+  display: none;
   max-width: 120px;
   height: 42px;
   margin-left: 20px;
@@ -340,6 +490,7 @@ body {
 }
 
 .courses-link {
+  display: none;
   position: absolute;
   bottom: -5px;
   right: -5px;
@@ -347,18 +498,15 @@ body {
 }
 
 .courses-button {
+  margin: 0 auto;
   margin-top: 40px;
-  margin-bottom: 120px;
-}
-
-.png-choice-mobile-200{
-  display: none;
+  margin-bottom: 60px;
 }
 
 /*subscription style*/
 .subscription {
-  max-width: 1920px;
-  height: 705px;
+  max-width: 639px;
+  /*height: 705px;*/
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -366,34 +514,49 @@ body {
   background-color: #ee5930;
   border: none;
   border-radius: 20px;
+  padding-bottom: 40px;
 }
 
-.subscription-card {
-  width: 424px;
-  height: 285px;
-  background-color: white;
+/*.choice {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #ee5930;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
   border: none;
   border-radius: 20px;
+} */
+
+.subscription-card {
+  width: 300px;
+  height: 195px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 4px;
 }
 
 .subscription-content {
-  margin-top: 25px;
-  margin-left: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .subscription-imprisonment {
   text-align: start;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   line-height: auto;
   letter-spacing: 0%;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: #231f20;
 }
 
 .subscription-info {
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 0px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 5%;
   line-height: auto;
@@ -402,36 +565,33 @@ body {
 
 .subscription-price {
   text-align: left;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   line-height: auto;
   letter-spacing: 0%;
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 20px;
   color: #ee5930;
 }
 
 .subscription-price:after {
   content: "\20BD";
-  font-size: 34px;
+  font-size: 22px;
   font-weight: 100;
 }
 
 .subscription-text {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 130%;
   line-height: auto;
   text-align: left;
 }
 
 .subscription-svg {
-  position: absolute;
-  top: -15px;
-  right: -15px;
+  display: none;
 }
 
 .subscription-svg-mobile {
-  display: none;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -439,8 +599,8 @@ body {
 
 /*laboratory style*/
 .laboratory {
-  max-width: 1920px;
-  height: 1015px;
+  max-width: 639px;
+  height: 638px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -450,45 +610,52 @@ body {
 }
 
 .laboratory-wrapper {
+  position: relative;
+  width: 320px;
+  height: 638px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  position: relative;
-  width: 1280px;
-  height: 680px;
-  margin: auto;
 }
 
 .lab-mobile-title{
+  margin: 0 auto;
+  width: 301px;
   color: #231f20;
-  margin-top: 0px;
-  margin-bottom: 70px;
-}
-
-.laboratory-subtitle{
-  width: 744px;
-  height: 46px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
-  letter-spacing: 130%;
+  font-size: 22px;
   line-height: auto;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+  margin-top: 80px;
   text-align: center;
 }
 
-.video-wrapper{
+.laboratory-subtitle {
+  width: 300px;
+  /*height: 46px;*/
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  letter-spacing: 130%;
+  line-height: auto;
+  text-align: left;
+}
+
+.video-wrapper {
   position: absolute;
-  bottom: 0px;
-  width: 1280px;
-  height: 500px;
+  margin-left: 10px;
+  bottom: 60px;
+  width: 300px;
+  height: 300px;
   border: none;
   border-radius: 20px;
   background-color: bisque;
 }
 
 /*full professors style*/
-.professor{
-  max-width: 1920px;
+.professor {
+  max-width: 639px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -499,11 +666,12 @@ body {
 }
 
 .professor-card {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 424px;
-  height: 545px;
+  width: 300px;
+  /*height: 356px;*/
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -513,16 +681,19 @@ body {
   border-radius: 20px;
 }
 
-.professor-title-mobile{
-  color: #231f20;
-  margin-bottom: 120px;
+.hide-professor-card{
+  display: none;
 }
 
-.professor-avatar{
+.professor-title-mobile{
+  color: #231f20;
+  margin-top: 60px;
+}
+
+.professor-avatar {
   width: 200px;
   height: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-bottom: 20px;
   border: none;
   border-radius: 100px;
@@ -530,20 +701,30 @@ body {
 }
 
 .professor-text {
-  font-size: 18px;
+  width: 259px;
+  font-size: 16px;
   letter-spacing: 130%;
   line-height: auto;
   text-align: left;
+  margin-bottom: 40px;
 }
 
-.svg-professor-open{
-  display: none;
+.svg-professor-open {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  width: 46px;
+  height: 46px;
+  /*border: 5px solid;
+  border-color: #ee5930;*/
+  border-radius: 46px;
 }
 
 /*final style*/
-.final{
-  max-width: 1920px;
-  height: 800px;
+.final {
+  max-width: 639px;
+  /*height: 800px;*/
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -551,44 +732,52 @@ body {
 }
 
 .final-wrapper {
-  width: 1280px;
-  height: 578px;
+  width: 320px;
+  /*height: 578px;*/
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   background-color: #f1f5f9;
   border: none;
   border-radius: 20px;
 }
 
-.final-card{
+.final-card {
   position: relative;
-  width: 428px;
-  height: 270px;
-  margin-left: 80px;
-  margin-top: 160px;
+  margin: 0 auto;
+  width: 301px;
+  /*height: 220px;*/
+  /*margin-left: 80px;
+  margin-top: 160px;*/
 }
 
 .final-title{
   color: #231f20;
+}
+
+.final-text{
+  width: 298px;
   margin-bottom: 60px;
-  margin-top: 0px;
-  text-align: left;
+  text-align: center;
 }
 
 .png-final {
+  display: none;
   margin-top: 36px;
   margin-right: 97px;
   height: 506px;
   width: 506px;
 }
 
-.png-final-mobile{
-  display: none;
+.png-final-mobile {
+  /*margin-top: 36px;
+  margin-right: 97px;*/
+  height: 287px;
+  width: 300px;
 }
 
 /*.final-wrapper {

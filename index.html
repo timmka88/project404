@@ -16,9 +16,20 @@
         <!--SECTION INTRO-->
         <section class="card">
           <div class="wrapper-without-png">
-            <h1 class="card-title">
-              Онлайн-курсы программирования и робототехники для детей
-            </h1>
+            <div class="wrapper-640">
+              <div class="wrapper-640-without-png">
+                <h1 class="card-title">
+                  Онлайн-курсы программирования и робототехники для детей
+                </h1>
+                <p class="form-legend-640">
+                  Запишитесь на бесплатный пробный урок и начните свое обучение
+                </p>
+              </div>
+              <!--png-640-->
+              <div class="png-main-640">
+                <img src="img/svg/Frame-640.jpg" alt="png-main-640" />
+              </div>
+            </div>
 
             <!--png-mobile-->
             <div class="png-mobile">
@@ -75,6 +86,9 @@
                 </legend>
               </fieldset>
             </form>
+            <p class="form-legend-post-640">
+              Нажимая эту кнопку вы соглашаетесь с политикой конфиденциальности
+            </p>
           </div>
           <div class="png-main">
             <img src="img/svg/Frame.png" alt="png-main" />
@@ -85,6 +99,7 @@
         <section class="choice">
           <h2 class="choice-title">НАС ВЫБИРАЮТ РОДИТЕЛИ, ПОТОМУ ЧТО …</h2>
           <div class="choice-wrapper">
+            <div class="js-wrapper">
             <!--1st card-->
             <div class="choice-card">
               <!--desctopImg-->
@@ -154,7 +169,8 @@
                 alt="svg-open"
               />
             </div>
-
+            </div>
+<div class="js-wrapper">
             <!--3rd-->
             <div class="choice-card">
               <div class="png-choice">
@@ -217,7 +233,9 @@
                 alt="svg-open"
               />
             </div>
+            </div>
 
+            <div class="js-wrapper">
             <!--5th-->
             <div class="choice-card">
               <div class="png-choice">
@@ -286,6 +304,7 @@
                 id="choice-card-button-6"
               ></img>-->
             </div>
+            </div>
             <!--
             <script>
               document.addEventListener("DOMContentLoaded", function () {
@@ -314,6 +333,10 @@
                 const hideSectionList =
                   document.querySelectorAll(".hide-choice-card");
                 const imgList = document.querySelectorAll(".svg-open");
+                const choiceConst = document.querySelector(".png-main-640");
+                const wrapperList = document.querySelectorAll(".js-wrapper");
+
+                if (choiceConst.style.display === "none") {
 
                 for (let i = 0; i < 6; i++) {
                   addButtonList[i].addEventListener("click", function () {
@@ -328,6 +351,27 @@
                     }
                   });
                 }
+              } else {
+                for (let i = 0; i < 3; i++) {
+                  wrapperList[i].addEventListener("click", function () {
+                    if (hideSectionList[2*i].style.display === "block") {
+                      hideSectionList[2*i].style.display = "none";
+                      hideSectionList[2*i+1].style.display = "none";
+                      imgList[2*i].src =
+                        "img/svg/Choice/Choice-mobile/svg-open.svg";
+                        imgList[2*i+1].src =
+                        "img/svg/Choice/Choice-mobile/svg-open.svg";  
+                    } else {
+                      hideSectionList[2*i].style.display = "block";
+                      imgList[2*i].src =
+                        "img/svg/Choice/Choice-mobile/svg-close.svg";
+                        hideSectionList[2*i+1].style.display = "block";
+                      imgList[2*i+1].src =
+                        "img/svg/Choice/Choice-mobile/svg-close.svg";
+                    }
+                  });
+                }
+              }
               });
             </script>
           </div>
@@ -777,7 +821,7 @@
               />
               <img
                 class="subscription-svg-mobile"
-                src="/img/svg/subscription10-mobile.svg"
+                src="./img/svg/subscription10-mobile.svg"
                 alt="sub10-mobile"
               />
             </div>
