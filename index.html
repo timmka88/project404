@@ -8,7 +8,24 @@
       <title>Project404</title>
       <style type="text/css"></style>
       <link rel="stylesheet" href="./css/reset.css" />
-      <link rel="stylesheet" href="./css/style-640.css" />
+      <!--<link rel="stylesheet" href="./css/style.css">-->
+      <!--<link rel="stylesheet" href="./css/style-640.css">-->
+      <!--<link rel="stylesheet" href="./css/style-mobile.css" />-->
+      <link
+        rel="stylesheet"
+        media="screen and (min-width: 1280px)"
+        href="./css/style.css"
+      />
+      <link
+        rel="stylesheet"
+        media="screen and (min-width: 640px) and (max-width: 1279px)"
+        href="./css/style-640.css"
+      />
+      <link
+        rel="stylesheet"
+        media="screen and (max-width: 639px)"
+        href="./css/style-mobile.css"
+      />
     </head>
 
     <body>
@@ -295,14 +312,6 @@
                   src="img/svg/Choice/Choice-mobile/svg-open.svg"
                   alt="svg-open"
                 />
-                <!--<img
-                class="svg-open"
-                style="
-                  background-image: url(img/svg/Choice/Choice-mobile/svg-open.svg);
-                  background-size: cover;
-                "
-                id="choice-card-button-6"
-              ></img>-->
               </div>
             </div>
             <!--
@@ -375,71 +384,6 @@
                 } else launchRocket();
               });
             </script>
-            <!--
-            <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                const addButtonList = document.querySelectorAll(".choice-card");
-                const hideSectionList =
-                  document.querySelectorAll(".hide-choice-card");
-                const imgList = document.querySelectorAll(".svg-open");
-                const choiceConst = document.querySelector(".png-main-640");
-                const wrapperList = document.querySelectorAll(".js-wrapper");
-                
-
-                if (window.matchMedia("(max-width: 639px)")) {
-
-                for (let i = 0; i < 6; i++) {
-                  addButtonList[i].addEventListener("click", function () {
-                    if (hideSectionList[i].style.display === "block") {
-                      hideSectionList[i].style.display = "none";
-                      imgList[i].src =
-                        "img/svg/Choice/Choice-mobile/svg-open.svg";
-                    } else {
-                      hideSectionList[i].style.display = "block";
-                      imgList[i].src =
-                        "img/svg/Choice/Choice-mobile/svg-close.svg";
-                    }
-                  });
-                }
-              } else if (window.matchMedia("(min-width: 640px)")){
-                for (let i = 0; i < 3; i++) {
-                  wrapperList[i].addEventListener("click", function () {
-                    if (hideSectionList[2*i].style.display === "block") {
-                      hideSectionList[2*i].style.display = "none";
-                      hideSectionList[2*i+1].style.display = "none";
-                      imgList[2*i].src =
-                        "img/svg/Choice/Choice-mobile/svg-open.svg";
-                        imgList[2*i+1].src =
-                        "img/svg/Choice/Choice-mobile/svg-open.svg";  
-                    } else {
-                      hideSectionList[2*i].style.display = "block";
-                      imgList[2*i].src =
-                        "img/svg/Choice/Choice-mobile/svg-close.svg";
-                        hideSectionList[2*i+1].style.display = "block";
-                      imgList[2*i+1].src =
-                        "img/svg/Choice/Choice-mobile/svg-close.svg";
-                    }
-                  });
-                }
-              } else launchRocket();
-              });
-            </script>
-          -->
-            <!--
-const para = document.querySelector("p"); // This is the UI element where to display the text
-const mql = window.matchMedia("(max-width: 600px)");
-
-mql.addEventListener("change", (event) => {
-  if (event.matches) {
-    // The viewport is 600 pixels wide or less
-    para.textContent = "This is a narrow screen — less than 600px wide.";
-    document.body.style.backgroundColor = "red";
-  } else {
-    // The viewport is more than 600 pixels wide
-    para.textContent = "This is a wide screen — more than 600px wide.";
-    document.body.style.backgroundColor = "blue";
-  }
-});  -->
           </div>
         </section>
 
@@ -482,6 +426,7 @@ mql.addEventListener("change", (event) => {
                   </div>
                 </div>
                 <p class="number-of-lessons">12 уроков</p>
+                <!--desktop link-->
                 <a
                   href="https://developer.mozilla.org/ru/"
                   target="_blank"
@@ -489,6 +434,17 @@ mql.addEventListener("change", (event) => {
                 >
                   <img
                     src="/img/svg/Courses/courses-link.svg"
+                    alt="courses-link"
+                  />
+                </a>
+                <!--mobile-link-->
+                <a
+                  href="https://developer.mozilla.org/ru/"
+                  target="_blank"
+                  class="courses-mobile-link"
+                >
+                  <img
+                    src="/img/svg/Courses/courses-mobile-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -535,6 +491,16 @@ mql.addEventListener("change", (event) => {
                     alt="courses-link"
                   />
                 </a>
+                <a
+                  href="https://developer.mozilla.org/ru/"
+                  target="_blank"
+                  class="courses-mobile-link"
+                >
+                  <img
+                    src="/img/svg/Courses/courses-mobile-link.svg"
+                    alt="courses-link"
+                  />
+                </a>
               </div>
               <!--3rd card-->
               <div class="courses-card" style="position: relative">
@@ -575,6 +541,16 @@ mql.addEventListener("change", (event) => {
                 >
                   <img
                     src="/img/svg/Courses/courses-link.svg"
+                    alt="courses-link"
+                  />
+                </a>
+                <a
+                  href="https://developer.mozilla.org/ru/"
+                  target="_blank"
+                  class="courses-mobile-link"
+                >
+                  <img
+                    src="/img/svg/Courses/courses-mobile-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -621,6 +597,16 @@ mql.addEventListener("change", (event) => {
                     alt="courses-link"
                   />
                 </a>
+                <a
+                  href="https://developer.mozilla.org/ru/"
+                  target="_blank"
+                  class="courses-mobile-link"
+                >
+                  <img
+                    src="/img/svg/Courses/courses-mobile-link.svg"
+                    alt="courses-link"
+                  />
+                </a>
               </div>
               <!--5th card-->
               <div class="courses-card" style="position: relative">
@@ -660,6 +646,16 @@ mql.addEventListener("change", (event) => {
                 >
                   <img
                     src="/img/svg/Courses/courses-link.svg"
+                    alt="courses-link"
+                  />
+                </a>
+                <a
+                  href="https://developer.mozilla.org/ru/"
+                  target="_blank"
+                  class="courses-mobile-link"
+                >
+                  <img
+                    src="/img/svg/Courses/courses-mobile-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -703,6 +699,16 @@ mql.addEventListener("change", (event) => {
                 >
                   <img
                     src="/img/svg/Courses/courses-link.svg"
+                    alt="courses-link"
+                  />
+                </a>
+                <a
+                  href="https://developer.mozilla.org/ru/"
+                  target="_blank"
+                  class="courses-mobile-link"
+                >
+                  <img
+                    src="/img/svg/Courses/courses-mobile-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -757,6 +763,16 @@ mql.addEventListener("change", (event) => {
                     alt="courses-link"
                   />
                 </a>
+                <a
+                  href="https://developer.mozilla.org/ru/"
+                  target="_blank"
+                  class="courses-mobile-link"
+                >
+                  <img
+                    src="/img/svg/Courses/courses-mobile-link.svg"
+                    alt="courses-link"
+                  />
+                </a>
               </div>
               <!--8th-->
               <div class="courses-card" style="position: relative">
@@ -797,6 +813,16 @@ mql.addEventListener("change", (event) => {
                 >
                   <img
                     src="/img/svg/Courses/courses-link.svg"
+                    alt="courses-link"
+                  />
+                </a>
+                <a
+                  href="https://developer.mozilla.org/ru/"
+                  target="_blank"
+                  class="courses-mobile-link"
+                >
+                  <img
+                    src="/img/svg/Courses/courses-mobile-link.svg"
                     alt="courses-link"
                   />
                 </a>
@@ -860,7 +886,7 @@ mql.addEventListener("change", (event) => {
               </div>
               <img
                 class="subscription-svg"
-                src="/img/svg/subscription5.svg"
+                src="./img/svg/subscription5.svg"
                 alt="sub5"
               />
               <img
@@ -882,7 +908,7 @@ mql.addEventListener("change", (event) => {
               </div>
               <img
                 class="subscription-svg"
-                src="/img/svg/subscription10.svg"
+                src="./img/svg/subscription10.svg"
                 alt="sub10"
               />
               <img
@@ -914,94 +940,145 @@ mql.addEventListener("change", (event) => {
           <h2 class="choice-title professor-title-mobile">
             НАШИ ПРЕПОДАВАТЕЛИ
           </h2>
-          <div class="choice-wrapper">
+          <div class="choice-wrapper desktop-professor">
             <!--1st card-->
             <div class="professor-card">
               <div class="professor-avatar"></div>
-              <h3
-                class="choice-subtitle"
-                style="text-align: center; margin-bottom: 10px"
-              >
-                ИВАНОВ <br />ИВАН ИВАНОВИЧ
+
+              <h3 class="choice-subtitle professor-name">
+                ИВАНОВ ИВАН ИВАНОВИЧ
               </h3>
-              <p
-                class="professor-text"
-                style="text-align: center; color: #ee5930; margin-bottom: 30px"
-              >
+              <p class="professor-text professor-text-mobile">
                 бакалавр направления "Робототехника"
               </p>
-              <div class="hide-professor-card">
-                <p class="professor-text">
-                  Сфера научных интересов: моделированные сигналы и синтез
-                  звука, применение плат Arduino для создания звуковых
-                  синтезаторов и контроллеров. Помимо основной программы, ведет
-                  в Робикс элективный курс по 3D-моделированию.
-                </p>
-              </div>
-              <img
-                class="svg-professor-open"
-                src="img/svg/Professors/prof-link-open.svg"
-                alt="svg-professor-open"
-              />
+
+              <p class="professor-text">
+                Сфера научных интересов: моделированные сигналы и синтез звука,
+                применение плат Arduino для создания звуковых синтезаторов и
+                контроллеров. Помимо основной программы, ведет в Робикс
+                элективный курс по 3D-моделированию.
+              </p>
             </div>
+
             <!--2nd card-->
             <div class="professor-card">
               <div class="professor-avatar"></div>
-              <h3
-                class="choice-subtitle"
-                style="text-align: center; margin-bottom: 10px"
-              >
-                ИВАНОВ <br />ИВАН ИВАНОВИЧ
+
+              <h3 class="choice-subtitle professor-name">
+                ИВАНОВ ИВАН ИВАНОВИЧ
               </h3>
-              <p
-                class="professor-text"
-                style="text-align: center; color: #ee5930; margin-bottom: 30px"
-              >
+              <p class="professor-text professor-text-mobile">
                 бакалавр направления "Робототехника"
               </p>
-              <div class="hide-professor-card">
-                <p class="professor-text">
-                  Сфера научных интересов: моделированные сигналы и синтез
-                  звука, применение плат Arduino для создания звуковых
-                  синтезаторов и контроллеров. Помимо основной программы, ведет
-                  в Робикс элективный курс по 3D-моделированию.
-                </p>
-              </div>
-              <img
-                class="svg-professor-open"
-                src="img/svg/Professors/prof-link-open.svg"
-                alt="svg-professor-open"
-              />
+
+              <p class="professor-text">
+                Сфера научных интересов: моделированные сигналы и синтез звука,
+                применение плат Arduino для создания звуковых синтезаторов и
+                контроллеров. Помимо основной программы, ведет в Робикс
+                элективный курс по 3D-моделированию.
+              </p>
             </div>
             <!--3rd card-->
             <div class="professor-card">
               <div class="professor-avatar"></div>
-              <h3
-                class="choice-subtitle"
-                style="text-align: center; margin-bottom: 10px"
-              >
-                ИВАНОВ <br />ИВАН ИВАНОВИЧ
+
+              <h3 class="choice-subtitle professor-name">
+                ИВАНОВ ИВАН ИВАНОВИЧ
               </h3>
-              <p
-                class="professor-text"
-                style="text-align: center; color: #ee5930; margin-bottom: 30px"
-              >
+              <p class="professor-text professor-text-mobile">
                 бакалавр направления "Робототехника"
               </p>
-              <div class="hide-professor-card">
-                <p class="professor-text">
-                  Сфера научных интересов: моделированные сигналы и синтез
-                  звука, применение плат Arduino для создания звуковых
-                  синтезаторов и контроллеров. Помимо основной программы, ведет
-                  в Робикс элективный курс по 3D-моделированию.
-                </p>
-              </div>
-              <img
-                class="svg-professor-open"
-                src="img/svg/Professors/prof-link-open.svg"
-                alt="svg-professor-open"
-              />
+
+              <p class="professor-text">
+                Сфера научных интересов: моделированные сигналы и синтез звука,
+                применение плат Arduino для создания звуковых синтезаторов и
+                контроллеров. Помимо основной программы, ведет в Робикс
+                элективный курс по 3D-моделированию.
+              </p>
             </div>
+          </div>
+          <div class="choice-wrapper mobile-professor">
+            <div class="show-professor">
+              <!--1st card-->
+              <div class="professor-card">
+                <div class="professor-avatar"></div>
+                <div class="professor-info-640">
+                  <h3 class="choice-subtitle professor-name">
+                    ИВАНОВ ИВАН ИВАНОВИЧ
+                  </h3>
+                  <p class="professor-text professor-text-mobile">
+                    бакалавр направления "Робототехника"
+                  </p>
+                  <div class="hide-professor-card">
+                    <p class="professor-text">
+                      Сфера научных интересов: моделированные сигналы и синтез
+                      звука, применение плат Arduino для создания звуковых
+                      синтезаторов и контроллеров. Помимо основной программы,
+                      ведет в Робикс элективный курс по 3D-моделированию.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  class="svg-professor-open"
+                  src="img/svg/Professors/prof-link-open.svg"
+                  alt="svg-professor-open"
+                />
+              </div>
+            </div>
+
+            <div class="hide-professor choice-wrapper" style="display: none">
+              <!--2nd card-->
+              <div class="professor-card">
+                <div class="professor-avatar"></div>
+                <div class="professor-info-640">
+                  <h3 class="choice-subtitle professor-name">
+                    ИВАНОВ ИВАН ИВАНОВИЧ
+                  </h3>
+                  <p class="professor-text professor-text-mobile">
+                    бакалавр направления "Робототехника"
+                  </p>
+                  <div class="hide-professor-card">
+                    <p class="professor-text">
+                      Сфера научных интересов: моделированные сигналы и синтез
+                      звука, применение плат Arduino для создания звуковых
+                      синтезаторов и контроллеров. Помимо основной программы,
+                      ведет в Робикс элективный курс по 3D-моделированию.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  class="svg-professor-open"
+                  src="img/svg/Professors/prof-link-open.svg"
+                  alt="svg-professor-open"
+                />
+              </div>
+              <!--3rd card-->
+              <div class="professor-card">
+                <div class="professor-avatar"></div>
+                <div class="professor-info-640">
+                  <h3 class="choice-subtitle professor-name">
+                    ИВАНОВ ИВАН ИВАНОВИЧ
+                  </h3>
+                  <p class="professor-text professor-text-mobile">
+                    бакалавр направления "Робототехника"
+                  </p>
+                  <div class="hide-professor-card">
+                    <p class="professor-text">
+                      Сфера научных интересов: моделированные сигналы и синтез
+                      звука, применение плат Arduino для создания звуковых
+                      синтезаторов и контроллеров. Помимо основной программы,
+                      ведет в Робикс элективный курс по 3D-моделированию.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  class="svg-professor-open"
+                  src="img/svg/Professors/prof-link-open.svg"
+                  alt="svg-professor-open"
+                />
+              </div>
+            </div>
+
             <script>
               document.addEventListener("DOMContentLoaded", function () {
                 const addButtonList =
@@ -1013,20 +1090,54 @@ mql.addEventListener("change", (event) => {
                   ".svg-professor-open"
                 );
 
-                for (let i = 0; i < addButtonList.length + 1; i++) {
-                  addButtonList[i].addEventListener("click", function () {
-                    if (hideSectionList[i].style.display === "block") {
-                      hideSectionList[i].style.display = "none";
-                      imgList[i].src = "img/svg/Professors/prof-link-open.svg";
-                    } else {
-                      hideSectionList[i].style.display = "block";
-                      imgList[i].src = "img/svg/Professors/prof-link-close.svg";
-                    }
-                  });
+                if (window.matchMedia("(max-width: 639px)").matches) {
+                  for (let i = 0; i < addButtonList.length + 1; i++) {
+                    addButtonList[i].addEventListener("click", function () {
+                      if (hideSectionList[i].style.display === "block") {
+                        hideSectionList[i].style.display = "none";
+                        imgList[i].src =
+                          "img/svg/Professors/prof-link-open.svg";
+                      } else {
+                        hideSectionList[i].style.display = "block";
+                        imgList[i].src =
+                          "img/svg/Professors/prof-link-close.svg";
+                      }
+                    });
+                  }
                 }
               });
             </script>
           </div>
+          <button
+            class="form-button courses-button desktop-display"
+            id="add-button-professor"
+          >
+            БОЛЬШЕ ПРЕПОДАВАТЕЛЕЙ
+          </button>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const addButtonProf = document.getElementById(
+                "add-button-professor"
+              );
+              const hideProf = document.querySelector(".hide-professor");
+              const showProf = document.querySelector(".show-professor");
+
+              addButtonProf.addEventListener("click", function () {
+                if (hideProf.style.display === showProf.style.display) {
+                  hideProf.style.display = "none";
+                  addButtonProf.innerText = "БОЛЬШЕ ПРЕПОДАВАТЕЛЕЙ";
+                  addButtonProf.scrollIntoView({
+                    behavior: "smooth",
+                    block: "end",
+                    inline: "nearest",
+                  });
+                } else {
+                  hideProf.style.display = showProf.style.display;
+                  addButtonProf.innerText = "СОКРАТИТЬ ПРЕПОДАВАТЕЛЕЙ";
+                }
+              });
+            });
+          </script>
         </section>
 
         <!--SECTION FINAL-->
@@ -1040,7 +1151,7 @@ mql.addEventListener("change", (event) => {
               </p>
               <button
                 id="subscribe"
-                class="form-button"
+                class="form-button form form-button-640"
                 style="position: absolute; bottom: 0px"
               >
                 ЗАПИСАТЬСЯ

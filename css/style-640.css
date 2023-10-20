@@ -497,6 +497,15 @@ body {
   margin-bottom: 0px;
 }
 
+.courses-mobile-link{
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 46px;
+  height: 46px;
+  border-radius: 46px;
+}
+
 .courses-button {
   margin: 0 auto;
   margin-top: 40px;
@@ -505,7 +514,7 @@ body {
 
 /*subscription style*/
 .subscription {
-  max-width: 639px;
+  max-width: 1279px;
   /*height: 705px;*/
   margin: 0 auto;
   display: flex;
@@ -599,8 +608,8 @@ body {
 
 /*laboratory style*/
 .laboratory {
-  max-width: 639px;
-  height: 638px;
+  max-width: 1279px;
+  height: 686px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -611,8 +620,8 @@ body {
 
 .laboratory-wrapper {
   position: relative;
-  width: 320px;
-  height: 638px;
+  width: 600px;
+  height: 606px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -626,28 +635,29 @@ body {
   font-size: 22px;
   line-height: auto;
   letter-spacing: 0%;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-top: 80px;
   text-align: center;
 }
 
 .laboratory-subtitle {
-  width: 300px;
+  width: 480px;
   /*height: 46px;*/
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
   font-size: 16px;
   letter-spacing: 130%;
   line-height: auto;
-  text-align: left;
+  text-align: center;
 }
 
 .video-wrapper {
   position: absolute;
-  margin-left: 10px;
-  bottom: 60px;
-  width: 300px;
-  height: 300px;
+  /*margin-left: auto;*/
+  bottom: 0px;
+  width: 600px;
+  height: 400px;
   border: none;
   border-radius: 20px;
   background-color: bisque;
@@ -655,7 +665,7 @@ body {
 
 /*full professors style*/
 .professor {
-  max-width: 639px;
+  max-width: 1279px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -668,10 +678,10 @@ body {
 .professor-card {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 300px;
-  /*height: 356px;*/
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 600px;
+  height: 346px;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -681,9 +691,20 @@ body {
   border-radius: 20px;
 }
 
-.hide-professor-card{
+.desktop-professor{
   display: none;
 }
+
+.professor-info-640{
+  width: 280px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*.hide-professor-card{
+  display: none;
+}*/
 
 .professor-title-mobile{
   color: #231f20;
@@ -693,15 +714,35 @@ body {
 .professor-avatar {
   width: 200px;
   height: 200px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-top: 40px;
   border: none;
   border-radius: 100px;
   background-color: beige;
 }
 
+.professor-name{
+  text-align: left;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+/*.choice-subtitle {
+  max-width: 230px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 5%;
+  line-height: auto;
+  text-align: left;
+}*/
+
+
 .professor-text {
-  width: 259px;
+  width: 280px;
   font-size: 16px;
   letter-spacing: 130%;
   line-height: auto;
@@ -709,7 +750,14 @@ body {
   margin-bottom: 40px;
 }
 
+.professor-text-mobile{
+  text-align: left;
+  color: #ee5930;
+  margin-bottom: 20px;
+}
+
 .svg-professor-open {
+  display: none;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -723,8 +771,8 @@ body {
 
 /*final style*/
 .final {
-  max-width: 639px;
-  /*height: 800px;*/
+  max-width: 1279px;
+  height: 478px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -732,8 +780,8 @@ body {
 }
 
 .final-wrapper {
-  width: 320px;
-  /*height: 578px;*/
+  width: 640px;
+  height: 378px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -749,7 +797,10 @@ body {
 .final-card {
   position: relative;
   margin: 0 auto;
+  margin-top: 60px;
+  margin-left: 20px;
   width: 301px;
+  height: 240px;
   /*height: 220px;*/
   /*margin-left: 80px;
   margin-top: 160px;*/
@@ -757,25 +808,43 @@ body {
 
 .final-title{
   color: #231f20;
+  text-align: left;
 }
 
 .final-text{
-  width: 298px;
+  width: 271px;
   margin-bottom: 60px;
-  text-align: center;
+  text-align: left;
+}
+
+.form-button-640 {
+  font-family: "Jura";
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  line-height: 130%;
+  letter-spacing: 5%;
+  width: 300px;
+  height: 43px;
+  background-color: #ee5930;
+  /*padding: 20px;*/
+  border: 0;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 10px;
 }
 
 .png-final {
   display: none;
-  margin-top: 36px;
+  margin-top: 46px;
   margin-right: 97px;
   height: 506px;
   width: 506px;
 }
 
 .png-final-mobile {
-  /*margin-top: 36px;
-  margin-right: 97px;*/
+  margin-top: 42px;
+  /*margin-right: 97px;*/
   height: 287px;
   width: 300px;
 }

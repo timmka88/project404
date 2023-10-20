@@ -346,6 +346,10 @@ body {
   margin-bottom: 0px;
 }
 
+.courses-mobile-link{
+  display: none;
+}
+
 .courses-button {
   margin-top: 40px;
   margin-bottom: 120px;
@@ -513,6 +517,10 @@ body {
   border-radius: 20px;
 }
 
+.mobile-professor{
+  display: none;
+}
+
 .professor-title-mobile{
   color: #231f20;
   margin-bottom: 120px;
@@ -529,6 +537,11 @@ body {
   background-color: beige;
 }
 
+.professor-name{
+  text-align: center;
+  margin-bottom: 0px;
+}
+
 .professor-text {
   font-size: 18px;
   letter-spacing: 130%;
@@ -536,9 +549,26 @@ body {
   text-align: left;
 }
 
+.professor-text-mobile{
+  text-align: center;
+  color: #ee5930;
+  margin-bottom: 30px;
+}
+
 .svg-professor-open{
   display: none;
 }
+
+.desktop-display{
+  display: none;
+}
+
+/*.hide-professor-desctop{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 4px;
+}*/
 
 /*final style*/
 .final{
