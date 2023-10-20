@@ -517,6 +517,21 @@ body {
   border-radius: 20px;
 }
 
+.desktop-professor-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 424px;
+  height: 545px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 4px;
+  background-color: #f1f5f9;
+  border: none;
+  border-radius: 20px;
+}
+
 .mobile-professor{
   display: none;
 }
