@@ -44,14 +44,14 @@
           }
         });
       </script> -->
-      <script>
+      <!--<script>
         const getParam = (param) => {
           const urlParams = new URL(window.location.toString()).searchParams;
           return urlParams.get(param) || "";
         };
 
         const utm = getParam("utm_source");
-      </script>
+      </script> -->
       <main>
         <!--SECTION INTRO-->
         <section class="card">
@@ -76,7 +76,7 @@
               <img src="img/svg/Frame-mobile.png" alt="png-main" />
             </div>
 
-            <form id="myForm" class="form-main">
+            <form id="myForm" name="myForm" class="form-main">
               <fieldset class="form-main-wrap">
                 <legend class="form-legend">
                   Запишитесь на бесплатный пробный урок и начните свое обучение
@@ -107,12 +107,7 @@
                   <option value="whatsapp">WhattsApp</option>
                 </select>
 
-                <input
-                  type="hidden"
-                  name="utm_source"
-                  data-name="utm_source"
-                  id="utm_source"
-                />
+                <input type="hidden" name="utm_source" id="utm_source" />
                 <!--<input type="hidden" name="utm_medium" value="" />
                 <input type="hidden" name="utm_campaign" value="" /> -->
 
@@ -138,7 +133,18 @@
           <div class="png-main">
             <img src="img/svg/Frame.png" alt="png-main" />
           </div>
+          <script>
+            const getParam = (param) => {
+              const urlParams = new URL(window.location.toString())
+                .searchParams;
+              return urlParams.get(param) || "";
+            };
 
+            const utm = getParam("utm_source");
+            let form = document.forms.myForm;
+            let elemUtm = form.elements.utm_source;
+            elemUtm.value = getParam("utm_source");
+          </script>
           <script>
             function postData() {
               const formData = new FormData(document.getElementById("myForm"));
