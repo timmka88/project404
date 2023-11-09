@@ -132,7 +132,7 @@
                   headers: {
                     "Content-Type": "application/json", // Adjust the content type based on your API requirements
                   },
-                  body: JSON.stringify(Object.fromEntries(formData), utm),
+                  body: JSON.stringify(Object.fromEntries(formData)), utm,
                 }
               )
                 .then((response) => response.json())
