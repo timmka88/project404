@@ -53,11 +53,7 @@
               <img src="img/svg/Frame-mobile.png" alt="png-main" />
             </div>
 
-            <form
-              name="form1"
-              action="<?php the_permalink();?>"
-              class="form-main"
-            >
+            <form id="myForm" class="form-main">
               <fieldset class="form-main-wrap">
                 <legend class="form-legend">
                   Запишитесь на бесплатный пробный урок и начните свое обучение
@@ -93,6 +89,7 @@
                   form="form1"
                   value="Submit"
                   class="form-button"
+                  onclick="postData()"
                 >
                   ЗАПИСАТЬСЯ
                 </button>
@@ -110,7 +107,72 @@
           <div class="png-main">
             <img src="img/svg/Frame.png" alt="png-main" />
           </div>
+
+          <script>
+            function postData() {
+              const formData = new FormData(document.getElementById("myForm"));
+
+              fetch("https://webhook.site/ad53b8fd-a9e0-4842-a370-b445ad258f4d", {
+                method: "POST",
+                mode: "cors", // Enable CORS
+                headers: {
+                  "Content-Type": "application/json", // Adjust the content type based on your API requirements
+                },
+                body: JSON.stringify(Object.fromEntries(formData)),
+              })
+                .then((response) => response.json())
+                .then((data) => {
+                  console.log("Success:", data);
+                })
+                .catch((error) => {
+                  console.error("Error:", error);
+                });
+            }
+          </script>
         </section>
+
+        <!-- <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <title>Cross-Domain POST Request</title>
+          </head>
+          <body>
+            <form id="myForm">
+              <label for="data">Data:</label>
+              <input type="text" id="data" name="data" required />
+              <button type="button" onclick="postData()">Submit</button>
+            </form>
+
+            <script>
+              function postData() {
+                const formData = new FormData(
+                  document.getElementById("myForm")
+                );
+
+                fetch("https://example.com/api/endpoint", {
+                  method: "POST",
+                  mode: "cors", // Enable CORS
+                  headers: {
+                    "Content-Type": "application/json", // Adjust the content type based on your API requirements
+                  },
+                  body: JSON.stringify(Object.fromEntries(formData)),
+                })
+                  .then((response) => response.json())
+                  .then((data) => {
+                    console.log("Success:", data);
+                  })
+                  .catch((error) => {
+                    console.error("Error:", error);
+                  });
+              }
+            </script>
+          </body>
+        </html> -->
 
         <!--SECTION CHOICE-->
         <section class="choice">
@@ -380,7 +442,7 @@
                         }
                       });
                     }
-                  } 
+                  }
                 }
               });
             </script>
