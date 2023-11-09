@@ -112,6 +112,13 @@
           </div>
 
           <script>
+            const getParam = (param) => {
+              const urlParams = new URL(window.location.toString())
+                .searchParams;
+              return urlParams.get(param) || "";
+            };
+
+            const utm = getParam("utm_source");
             function postData() {
               const formData = new FormData(document.getElementById("myForm"));
 
