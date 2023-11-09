@@ -29,7 +29,7 @@
     </head>
 
     <body>
-      <script>
+      <!--<script>
         const urlParams = new URLSearchParams(window.location.search);
         const utmParams = ["utm_source", "utm_medium", "utm_campaign"];
 
@@ -43,6 +43,14 @@
             utmField.value = paramValue.trim();
           }
         });
+      </script> -->
+      <script>
+        const getParam = (param) => {
+          const urlParams = new URL(window.location.toString()).searchParams;
+          return urlParams.get(param) || "";
+        };
+
+        const utm = getParam("utm_source");
       </script>
       <main>
         <!--SECTION INTRO-->
@@ -99,7 +107,12 @@
                   <option value="whatsapp">WhattsApp</option>
                 </select>
 
-                <input type="hidden" name="utm_source" data-name="utm_source" id="utm_source"/>
+                <input
+                  type="hidden"
+                  name="utm_source"
+                  data-name="utm_source"
+                  id="utm_source"
+                />
                 <!--<input type="hidden" name="utm_medium" value="" />
                 <input type="hidden" name="utm_campaign" value="" /> -->
 
