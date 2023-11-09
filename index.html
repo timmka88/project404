@@ -84,7 +84,7 @@
                 <!--<p class="form-main-data">-->
                 <input
                   id="name"
-                  name="u_name"
+                  name="legal_name"
                   type="text"
                   placeholder="Ваше имя"
                   required
@@ -109,7 +109,7 @@
 
                 <input type="hidden" name="utm_source" id="utm_source" />
                 <input type="hidden" name="utm_medium" id="utm_medium" />
-                <!--<input type="hidden" name="utm_campaign" value="" /> -->
+                <input type="hidden" name="utm_campaign" id="utm_campaign" />
 
                 <button
                   type="submit"
@@ -133,6 +133,7 @@
           <div class="png-main">
             <img src="img/svg/Frame.png" alt="png-main" />
           </div>
+          <!--fill utm parameters in form-->
           <script>
             const getParam = (param) => {
               const urlParams = new URL(window.location.toString())
@@ -140,13 +141,16 @@
               return urlParams.get(param) || "";
             };
 
-            const utm = getParam("utm_source");
+            //const utm = getParam("utm_source");
             let form = document.forms.myForm;
             let elemUtmSource = form.elements.utm_source;
             let elemUtmMedium = form.elements.utm_medium;
+            let elemUtmCampaign = form.elements.utm_campaign;
             elemUtmSource.value = getParam("utm_source");
             elemUtmMedium.value = getParam("utm_medium");
+            elemUtmCampaign.value = getParam("utm_campaign");
           </script>
+          <!--Post request-->
           <script>
             function postData() {
               const formData = new FormData(document.getElementById("myForm"));
