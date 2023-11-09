@@ -29,6 +29,15 @@
     </head>
 
     <body>
+      <script>
+        const getParam = (param) => {
+              const urlParams = new URL(window.location.toString())
+                .searchParams;
+              return urlParams.get(param) || "";
+            };
+
+            const utm = getParam("utm_source");
+      </script>
       <main>
         <!--SECTION INTRO-->
         <section class="card">
@@ -84,7 +93,7 @@
                   <option value="whatsapp">WhattsApp</option>
                 </select>
 
-                <input type="hidden" name="utm_source" />
+                <input type="hidden" name="utm_source" value="utm_source"/>
                 <input type="hidden" name="utm_medium" value="" />
                 <input type="hidden" name="utm_campaign" value="" />
 
@@ -112,13 +121,6 @@
           </div>
 
           <script>
-            const getParam = (param) => {
-              const urlParams = new URL(window.location.toString())
-                .searchParams;
-              return urlParams.get(param) || "";
-            };
-
-            const utm = getParam("utm_source");
             function postData() {
               const formData = new FormData(document.getElementById("myForm"));
 
