@@ -108,8 +108,8 @@
                 </select>
 
                 <input type="hidden" name="utm_source" id="utm_source" />
-                <!--<input type="hidden" name="utm_medium" value="" />
-                <input type="hidden" name="utm_campaign" value="" /> -->
+                <input type="hidden" name="utm_medium" id="utm_medium" />
+                <!--<input type="hidden" name="utm_campaign" value="" /> -->
 
                 <button
                   type="submit"
@@ -142,8 +142,10 @@
 
             const utm = getParam("utm_source");
             let form = document.forms.myForm;
-            let elemUtm = form.elements.utm_source;
-            elemUtm.value = getParam("utm_source");
+            let elemUtmSource = form.elements.utm_source;
+            let elemUtmMedium = form.elements.utm_medium;
+            elemUtmSource.value = getParam("utm_source");
+            elemUtmMedium.value = getParam("utm_medium");
           </script>
           <script>
             function postData() {
