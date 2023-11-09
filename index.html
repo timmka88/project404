@@ -84,6 +84,10 @@
                   <option value="whatsapp">WhattsApp</option>
                 </select>
 
+                <input type="hidden" name="utm_source" value="" />
+                <input type="hidden" name="utm_medium" value="" />
+                <input type="hidden" name="utm_campaign" value="" />
+
                 <button
                   type="submit"
                   form="form1"
@@ -112,14 +116,17 @@
             function postData() {
               const formData = new FormData(document.getElementById("myForm"));
 
-              fetch("https://webhook.site/ad53b8fd-a9e0-4842-a370-b445ad258f4d", {
-                method: "POST",
-                mode: "cors", // Enable CORS
-                headers: {
-                  "Content-Type": "application/json", // Adjust the content type based on your API requirements
-                },
-                body: JSON.stringify(Object.fromEntries(formData)),
-              })
+              fetch(
+                "https://webhook.site/ad53b8fd-a9e0-4842-a370-b445ad258f4d",
+                {
+                  method: "POST",
+                  mode: "cors", // Enable CORS
+                  headers: {
+                    "Content-Type": "application/json", // Adjust the content type based on your API requirements
+                  },
+                  body: JSON.stringify(Object.fromEntries(formData)),
+                }
+              )
                 .then((response) => response.json())
                 .then((data) => {
                   console.log("Success:", data);
