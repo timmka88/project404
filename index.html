@@ -30,13 +30,19 @@
 
     <body>
       <script>
-        const getParam = (param) => {
-              const urlParams = new URL(window.location.toString())
-                .searchParams;
-              return urlParams.get(param) || "";
-            };
+        const urlParams = new URLSearchParams(window.location.search);
+        const utmParams = ["utm_source", "utm_medium", "utm_campaign"];
 
-            const utm = getParam("utm_source");
+        let paramValue, utmField;
+
+        utmParams.forEach(function (param) {
+          paramValue = urlParams.get(param);
+          utmField = document.querySelector("input[name='" + param + "']");
+
+          if (paramValue && utmField) {
+            utmField.value = paramValue.trim();
+          }
+        });
       </script>
       <main>
         <!--SECTION INTRO-->
@@ -93,7 +99,7 @@
                   <option value="whatsapp">WhattsApp</option>
                 </select>
 
-                <input type="hidden" name="utm_source" value="utm"/>
+                <input type="hidden" name="utm_source" data-name="utm_source" id="utm_source"/>
                 <!--<input type="hidden" name="utm_medium" value="" />
                 <input type="hidden" name="utm_campaign" value="" /> -->
 
@@ -132,7 +138,7 @@
                   headers: {
                     "Content-Type": "application/json", // Adjust the content type based on your API requirements
                   },
-                  body: JSON.stringify(Object.fromEntries(formData)), utm,
+                  body: JSON.stringify(Object.fromEntries(formData)),
                 }
               )
                 .then((response) => response.json())
