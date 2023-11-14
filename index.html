@@ -76,62 +76,65 @@
             <div class="png-mobile">
               <img src="img/svg/Frame-mobile.png" alt="png-main" />
             </div>
+            <div class="form-show" id="form-wrapper">
+              <form id="myForm" name="myForm" class="form-main">
+                <fieldset class="form-main-wrap">
+                  <legend class="form-legend">
+                    Запишитесь на бесплатный пробный урок и начните свое
+                    обучение
+                  </legend>
+                  <!--<p class="form-main-data">-->
+                  <input
+                    id="name"
+                    name="legal_name"
+                    type="text"
+                    placeholder="Ваше имя"
+                    required
+                    class="form-main-field"
+                    autocomplete="name"
+                  />
+                  <input
+                    name="phone"
+                    type="tel"
+                    placeholder="Телефон"
+                    required
+                    class="form-main-field"
+                    autocomplete="tel"
+                  />
 
-            <form id="myForm" name="myForm" class="form-main">
-              <fieldset class="form-main-wrap">
-                <legend class="form-legend">
-                  Запишитесь на бесплатный пробный урок и начните свое обучение
-                </legend>
-                <!--<p class="form-main-data">-->
-                <input
-                  id="name"
-                  name="legal_name"
-                  type="text"
-                  placeholder="Ваше имя"
-                  required
-                  class="form-main-field"
-                  autocomplete="name"
-                />
-                <input
-                  name="phone"
-                  type="tel"
-                  placeholder="Телефон"
-                  required
-                  class="form-main-field"
-                  autocomplete="tel"
-                />
+                  <select
+                    name="connect"
+                    id="connect-select"
+                    class="form-main-field"
+                  >
+                    <option value="ring">Звонок</option>
+                    <option value="whatsapp">WhattsApp</option>
+                  </select>
 
-                <select
-                  name="connect"
-                  id="connect-select"
-                  class="form-main-field"
-                >
-                  <option value="ring">Звонок</option>
-                  <option value="whatsapp">WhattsApp</option>
-                </select>
+                  <input type="hidden" name="utm_source" id="utm_source" />
+                  <input type="hidden" name="utm_medium" id="utm_medium" />
+                  <input type="hidden" name="utm_campaign" id="utm_campaign" />
 
-                <input type="hidden" name="utm_source" id="utm_source" />
-                <input type="hidden" name="utm_medium" id="utm_medium" />
-                <input type="hidden" name="utm_campaign" id="utm_campaign" />
-
-                <button
-                  type="submit"
-                  value="Submit"
-                  class="form-button"
-                  onclick="postData()"
-                >
-                  ЗАПИСАТЬСЯ
-                </button>
-                <!--</p>-->
-                <legend class="form-legend-post">
-                  Нажимая эту кнопку вы соглашаетесь с политикой
-                  конфиденциальности
-                </legend>
-              </fieldset>
-            </form>
-            <p class="form-legend-post-640">
-              Нажимая эту кнопку вы соглашаетесь с политикой конфиденциальности
-            </p>
+                  <button
+                    type="submit"
+                    value="Submit"
+                    class="form-button"
+                    onclick="postData()"
+                  >
+                    ЗАПИСАТЬСЯ
+                  </button>
+                  <!--</p>-->
+                  <legend class="form-legend-post">
+                    Нажимая эту кнопку вы соглашаетесь с политикой
+                    конфиденциальности
+                  </legend>
+                </fieldset>
+              </form>
+              <p class="form-legend-post-640">
+                Нажимая эту кнопку вы соглашаетесь с политикой
+                конфиденциальности
+              </p>
+            </div>
           </div>
           <div class="form-success" id="form-success">
             <p class="success-1">ВАША ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА</p>
