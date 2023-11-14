@@ -161,12 +161,28 @@
             elemUtmCampaign.value = getParam("utm_campaign");
           </script>
           <!--Post request-->
+          <!--function validateForm() {
+            var x = document.forms["myForm"]["legal_name"].value;
+            if (x == "") {
+              alert("Name must be filled out");
+              return false;
+            }
+          }-->
           <script>
             function postData() {
+              var x = document.forms["myForm"]["legal_name"].value;
+              var y = document.forms["myForm"]["phone"].value;
               const formData = new FormData(document.getElementById("myForm"));
               const formWrap = document.getElementById("form-wrapper");
               const formSuccess = document.getElementById("form-success");
 
+              if (x == "") {
+                alert("Name must be filled out");
+                return false;
+              } else  if (y == "") {
+                alert("Phone number must be filled out");
+                return false;
+              } else {
               event.preventDefault();
               fetch(
                 "https://webhook.site/ad53b8fd-a9e0-4842-a370-b445ad258f4d",
@@ -200,6 +216,7 @@
               //formWrap.style.display = "none";
               //formSuccess.style.display = "block";
             }
+          }
           </script>
         </section>
 
