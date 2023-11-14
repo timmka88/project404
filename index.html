@@ -180,15 +180,23 @@
                   body: JSON.stringify(Object.fromEntries(formData)),
                 }
               )
-                .then((response) => response.json())
+                .then((response) => {
+                  if (response.ok) {
+                    formWrap.style.display = "none";
+                    formSuccess.style.display = "block";
+                  }
+                  return response.json();
+                })
+                //.then((response) => response.json())
                 .then((data) => {
                   console.log("Success:", data);
-                  formWrap.style.display = "none";
-                  formSuccess.style.display = "block";
+                  //formWrap.style.display = "none";
+                  //formSuccess.style.display = "block";
                 })
-                .catch((error) => {
+                .catch(console.error);
+              /*.catch((error) => {
                   console.error("Error:");
-                });
+                });*/
               //formWrap.style.display = "none";
               //formSuccess.style.display = "block";
             }
