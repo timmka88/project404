@@ -168,18 +168,17 @@
               const formSuccess = document.getElementById("form-success");
 
               event.preventDefault();
-              fetch(
-                "https://webhook.site/ad53b8fd-a9e0-4842-a370-b445ad258f4d",
-                {
-                  //fetch("https://robx.org/online-handler/", {
-                  method: "POST",
-                  mode: "cors", // Enable CORS
-                  headers: {
-                    "Content-Type": "application/json", // Adjust the content type based on your API requirements
-                  },
-                  body: JSON.stringify(Object.fromEntries(formData)),
-                }
-              )
+              //fetch(
+              //"https://webhook.site/ad53b8fd-a9e0-4842-a370-b445ad258f4d",
+              //{
+              fetch("https://robx.org/online-handler/", {
+                method: "POST",
+                mode: "cors", // Enable CORS
+                headers: {
+                  "Content-Type": "application/json", // Adjust the content type based on your API requirements
+                },
+                body: JSON.stringify(Object.fromEntries(formData)),
+              })
                 .then((response) => response.json())
                 .then((data) => {
                   console.log("Success:", data);
