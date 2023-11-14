@@ -159,6 +159,8 @@
           <script>
             function postData() {
               const formData = new FormData(document.getElementById("myForm"));
+              const formWrap = document.getElementById("form-wrapper");
+              const formSuccess = document.getElementById("form-success");
 
               fetch(
                 "https://webhook.site/ad53b8fd-a9e0-4842-a370-b445ad258f4d",
