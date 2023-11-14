@@ -65,6 +65,7 @@
                   Запишитесь на бесплатный пробный урок и начните свое обучение
                 </p>
               </div>
+
               <!--png-640-->
               <div class="png-main-640">
                 <img src="img/svg/Frame-640.jpg" alt="png-main-640" />
@@ -130,6 +131,10 @@
               Нажимая эту кнопку вы соглашаетесь с политикой конфиденциальности
             </p>
           </div>
+          <div class="form-success" id="form-success">
+            <p class="success-1">ВАША ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА</p>
+            <p class="success-2">Мы свяжемся с Вами в ближайшее время!</p>
+          </div>
           <div class="png-main">
             <img src="img/svg/Frame.png" alt="png-main" />
           </div>
@@ -155,9 +160,8 @@
             function postData() {
               const formData = new FormData(document.getElementById("myForm"));
 
-              fetch(
-                "https://webhook.site/ad53b8fd-a9e0-4842-a370-b445ad258f4d",
-                {
+              //fetch("https://webhook.site/ad53b8fd-a9e0-4842-a370-b445ad258f4d", {
+                fetch("https://robx.org/online-handler/", {
                   method: "POST",
                   mode: "cors", // Enable CORS
                   headers: {
@@ -173,6 +177,8 @@
                 .catch((error) => {
                   console.error("Error:", error);
                 });
+              formWrap.style.display = "none";
+              formSuccess.style.display = "block";
             }
           </script>
         </section>

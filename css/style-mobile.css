@@ -115,6 +115,32 @@ body {
   flex-direction: column;
 }
 
+.form-show{
+  display: block;
+}
+
+.form-success{
+  display: none;
+  margin: auto;
+  margin-top: 10px;
+  width: 296px;
+}
+
+.success-1{
+  text-align: center;
+  font-size: 16px;
+  line-height: auto;
+  letter-spacing: 5%;
+  color: #ee5930;
+}
+
+.success-2{
+  text-align: center;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
 .card-title {
   max-width: 300px;
   height: 67px;

@@ -84,6 +84,30 @@ body {
   flex-direction: column;
 }
 
+.form-show{
+  display: block;
+}
+
+.form-success{
+  display: none;
+}
+
+.success-1{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: auto;
+  letter-spacing: 5%;
+  color: #ee5930;
+}
+
+.success-2{
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
 .png-mobile{
   display: none;
 }
